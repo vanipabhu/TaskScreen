@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/rl_task_appbar">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/running_dark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/image_running"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/icon_plus_orange_big"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon_plus"
+            android:layout_alignTop="@+id/image_running"
+            android:layout_toLeftOf="@+id/image_running"
+            android:layout_toStartOf="@+id/image_running" />
+
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:padding="7dp"
+            android:src="@drawable/menubar_dark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon_navigation_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/rl_searchview_task" />
+
+        <TextView
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasks"
+            android:id="@+id/textView_task"
+            android:layout_above="@+id/rl_searchview_task"
+            android:layout_toRightOf="@+id/icon_navigation_bar"
+            android:layout_toEndOf="@+id/icon_navigation_bar"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/filter_dark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon_task_clock"
+            android:layout_alignTop="@+id/icon_plus"
+            android:layout_toLeftOf="@+id/icon_plus"
+            android:layout_toStartOf="@+id/icon_plus" />
+
+        <ImageView
+            android:padding="9dp"
+            android:src="@drawable/bt_inactive_history_dark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon_search"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/icon_task_clock"
+            android:layout_toStartOf="@+id/icon_task_clock" />
+
+        <RelativeLayout
+            android:id="@+id/rl_searchview_task"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/image_running"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:src="@drawable/search_dark"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_search_task"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:hint="Search Task"
+                android:id="@+id/edit_tasksearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/image_search_task"
+                android:layout_toEndOf="@+id/image_search_task"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/custom_year_layout"
+            android:layout_marginTop="10dp"
+            layout="@layout/custom_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_searchview_task"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

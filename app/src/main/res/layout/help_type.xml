@@ -1,0 +1,1425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_account_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Assistance an appoint..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_assist_opp"/>
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_appoint"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_assist_opp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_assist"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_alignTop="@+id/image_round_appoint"
+            android:layout_alignLeft="@+id/image_help_nego"
+            android:layout_alignStart="@+id/image_help_nego" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_weeks"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignTop="@+id/image_round_appoint"
+            android:layout_toRightOf="@+id/image_assist"
+            android:layout_toEndOf="@+id/image_assist"
+            android:layout_marginLeft="57dp"
+            android:layout_marginStart="57dp"
+            android:layout_alignBottom="@+id/txt_help_assist_opp" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_nego"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_ass_nego"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_nego"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Assistance with presenta..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_present"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_assist"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_present"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_present"
+
+            />
+
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_help_nego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_present"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_toRightOf="@+id/image_round_present"
+            android:layout_toEndOf="@+id/image_round_present"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_nego"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignTop="@+id/image_help_nego"
+            android:layout_alignLeft="@+id/image_weeks"
+            android:layout_alignStart="@+id/image_weeks"
+            android:layout_alignBottom="@+id/image_help_nego" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_assist"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_assist_opp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_assist"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Assistance with Negotiat..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_nego"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_nego"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_nego"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_nego"
+
+            />
+
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_help_assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_nego"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_toRightOf="@+id/image_round_nego"
+            android:layout_toEndOf="@+id/image_round_nego"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_present"
+            android:src="@drawable/icon_more_actions"
+            android:layout_below="@+id/image_round_present"
+            android:layout_alignLeft="@+id/image_moreaction_nego"
+            android:layout_alignStart="@+id/image_moreaction_nego"
+            android:layout_alignBottom="@+id/image_help_present" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_present"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_ass_present"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_present"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Book Appointmentt..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_book"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_present"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_book"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_book"
+
+            />
+
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_help_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_book"
+            android:src="@drawable/disc_green_question_mark"
+            android:layout_toRightOf="@+id/image_round_nego"
+            android:layout_toEndOf="@+id/image_round_nego"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_book"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignTop="@+id/image_help_book"
+            android:layout_alignLeft="@+id/image_moreaction_present"
+            android:layout_alignStart="@+id/image_moreaction_present"
+            android:layout_alignBottom="@+id/image_help_book" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_book"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_ass_book"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_book"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Create Contract..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_create_contract"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_book"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_create_contract"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_create_contract"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_create_contract"
+            android:src="@drawable/disc_red_question_mark"
+
+            android:layout_alignBottom="@+id/txt_help_ass_create_contract"
+            android:layout_alignLeft="@+id/image_help_book"
+            android:layout_alignStart="@+id/image_help_book" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_create_contract"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_help_create_contract"
+            android:layout_alignLeft="@+id/image_moreaction_book"
+            android:layout_alignStart="@+id/image_moreaction_book"
+            android:layout_alignTop="@+id/image_help_create_contract" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_create_contract"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_ass_create_contract"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_create_contract"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Create quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_create_quote"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_create_contract"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_create_quote"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_create_quote"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_create_quote"
+            android:src="@drawable/disc_yellow_question_mark"
+
+            android:layout_alignBottom="@+id/txt_help_ass_create_quote"
+            android:layout_alignLeft="@+id/image_help_present"
+            android:layout_alignStart="@+id/image_help_present" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_create_quote"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignTop="@+id/image_help_create_quote"
+            android:layout_alignLeft="@+id/image_moreaction_create_contract"
+            android:layout_alignStart="@+id/image_moreaction_create_contract"
+            android:layout_alignBottom="@+id/image_help_create_quote" />
+
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_followup"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_ass_followup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_followup"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Help building relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_help_building"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_followup"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_help_building"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_help_building"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_building"
+            android:src="@drawable/disc_blue_question_mark"
+
+            android:layout_alignTop="@+id/image_round_help_building"
+            android:layout_alignLeft="@+id/image_help_create_quote"
+            android:layout_alignStart="@+id/image_help_create_quote" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_building"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_help_building"
+            android:layout_alignLeft="@+id/image_moreaction_followup"
+            android:layout_alignStart="@+id/image_moreaction_followup"
+            android:layout_alignTop="@+id/image_help_building" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_relationship"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_ass_help_building"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_relationship"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Hold Appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_hold_appo"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_relationship"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_hold_appo"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_hold_appo"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_hold_appo"
+            android:src="@drawable/disc_green_question_mark"
+
+            android:layout_alignTop="@+id/image_round_hold_appo"
+            android:layout_alignLeft="@+id/image_help_building"
+            android:layout_alignStart="@+id/image_help_building" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_hold_aapo"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignLeft="@+id/image_moreaction_building"
+            android:layout_alignStart="@+id/image_moreaction_building"
+            android:layout_alignBottom="@+id/image_help_hold_appo"
+            android:layout_alignTop="@+id/image_help_hold_appo" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_hold_appo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_ass_hold_appo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_create_quote"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Follow up quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_followup"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_create_quote"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_followup"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_followup"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_followup"
+            android:src="@drawable/disc_blue_question_mark"
+
+            android:layout_alignTop="@+id/image_round_followup"
+            android:layout_alignLeft="@+id/image_help_create_contract"
+            android:layout_alignStart="@+id/image_help_create_contract" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_followup"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignLeft="@+id/image_moreaction_create_quote"
+            android:layout_alignStart="@+id/image_moreaction_create_quote"
+            android:layout_alignTop="@+id/image_help_followup"
+            android:layout_alignBottom="@+id/txt_help_ass_followup" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_create_quote"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_ass_create_quote"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_hold_appo"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Hold Negotiation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_hold_nego"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_hold_appo"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_hold_nego"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_hold_nego"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_hold_nego"
+            android:src="@drawable/disc_blue_question_mark"
+
+            android:layout_alignTop="@+id/image_round_hold_nego"
+            android:layout_alignLeft="@+id/image_help_followup"
+            android:layout_alignStart="@+id/image_help_followup" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_hold_nego"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignTop="@+id/image_help_hold_nego"
+            android:layout_alignLeft="@+id/image_moreaction_hold_aapo"
+            android:layout_alignStart="@+id/image_moreaction_hold_aapo"
+            android:layout_alignBottom="@+id/image_help_hold_nego" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_help_hold_nego"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_help_ass_hold_nego"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/view_help_hold_nego"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="Hold Presentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_help_ass_hold_presentation"/>
+
+
+        <ImageView
+            android:layout_below="@+id/view_help_hold_nego"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round_hold_present"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_help_ass_hold_presentation"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_help_hold_presentation"
+            android:src="@drawable/disc_blue_question_mark"
+
+            android:layout_alignBottom="@+id/txt_help_ass_hold_presentation"
+            android:layout_alignLeft="@+id/image_help_hold_appo"
+            android:layout_alignStart="@+id/image_help_hold_appo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_moreaction_hold_present"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignTop="@+id/image_help_hold_presentation"
+            android:layout_alignLeft="@+id/image_moreaction_hold_nego"
+            android:layout_alignStart="@+id/image_moreaction_hold_nego"
+            android:layout_alignBottom="@+id/image_help_hold_presentation" />
+
+
+
+
+
+
+        <!--<TextView
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_workdays"
+            android:text="Assistance an Negotia.."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_hours"/>
+
+        <ImageView
+            android:layout_below="@+id/view_workdays"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round2"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_hours"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_hours_number"
+            android:src="@drawable/disc_blue_question_mark"
+            android:layout_alignBottom="@+id/image_round2"
+            android:layout_alignLeft="@+id/txt_weeek_number"
+            android:layout_alignStart="@+id/txt_weeek_number"
+            android:layout_alignTop="@+id/image_round2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_hours"
+            android:src="@drawable/icon_more_actions"
+            android:layout_below="@+id/view_workdays"
+            android:layout_alignLeft="@+id/image_weeks"
+            android:layout_alignStart="@+id/image_weeks"
+            android:layout_alignBottom="@+id/txt_hours_number" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_hours"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_hours"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_hours"
+            android:text="Assistance with prese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_currency"/>
+
+        <ImageView
+            android:layout_below="@+id/view_hours"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round3"
+            android:src="@drawable/icon_question_mark"
+            android:layout_toRightOf="@+id/txt_currency"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_vnd"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_alignTop="@+id/image_round3"
+            android:layout_alignLeft="@+id/txt_hours_number"
+            android:layout_alignStart="@+id/txt_hours_number"
+            android:layout_alignBottom="@+id/image_round3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_currency"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignTop="@+id/txt_vnd"
+            android:layout_alignLeft="@+id/image_hours"
+            android:layout_alignStart="@+id/image_hours" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_currency"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_currency"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_currency"
+            android:layout_marginLeft="15dp"
+            android:text="Book Appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_adaptive"/>
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_currency"
+            android:layout_toRightOf="@+id/txt_adaptive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_adaptive"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question4"
+            android:src="@drawable/disc_blue_question_mark"
+            android:layout_above="@+id/view_adaptive"
+            android:layout_alignLeft="@+id/txt_vnd"
+            android:layout_alignStart="@+id/txt_vnd" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action4"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_question4"
+            android:layout_alignLeft="@+id/image_currency"
+            android:layout_alignStart="@+id/image_currency"
+            android:layout_below="@+id/view_currency" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_adaptive"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_adaptive"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+           />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_adaptive"
+            android:text="Create Contract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_median"/>
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_adaptive"
+            android:layout_toRightOf="@+id/txt_median"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round5"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question5"
+            android:src="@drawable/disc_blue_question_mark"
+            android:layout_below="@+id/view_adaptive"
+            android:layout_alignLeft="@+id/image_question6"
+            android:layout_alignStart="@+id/image_question6"
+            android:layout_alignBottom="@+id/image_round5"
+            android:layout_alignRight="@+id/image_question4"
+            android:layout_alignEnd="@+id/image_question4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action5"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/txt_median"
+            android:layout_toRightOf="@+id/image_more_action7"
+            android:layout_toEndOf="@+id/image_more_action7"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp" />
+
+
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_median_size"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_median_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_median"
+            android:layout_marginLeft="15dp"
+            android:text="Create Quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_median_size"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_median"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_median_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round6"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question6"
+            android:src="@drawable/disc_green_question_mark"
+            android:layout_alignTop="@+id/image_round6"
+            android:layout_alignLeft="@+id/image_question4"
+            android:layout_alignStart="@+id/image_question4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action6"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignTop="@+id/image_question6"
+            android:layout_toRightOf="@+id/image_more_action5"
+            android:layout_toEndOf="@+id/image_more_action5" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_median"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_median"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_fiscal"
+            android:text="Follow up quote"
+            android:layout_below="@+id/view_median_size"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_median_size"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_fiscal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round7"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question7"
+            android:src="@drawable/disc_yellow_question_mark"
+            android:layout_above="@+id/view_fiscal"
+            android:layout_alignLeft="@+id/image_question6"
+            android:layout_alignStart="@+id/image_question6" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_median_size"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/image_question7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action7"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_question7" />
+
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_fiscal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_fiscal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_fiscal"
+            android:layout_marginLeft="15dp"
+            android:text="Help bulid Relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_start_md"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_fiscal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_start_md"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round8"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_round8"
+            android:layout_below="@+id/view_fiscal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question8"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_alignLeft="@+id/image_question6"
+            android:layout_alignStart="@+id/image_question6" />
+
+
+
+
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_fiscal"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/txt_weeek_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_start_md"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_question8" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_start"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_start_md"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_start"
+            android:layout_marginLeft="15dp"
+            android:text="Hold Appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_link_focus"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_start"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_link_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round9"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_round9"
+            android:layout_below="@+id/view_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question9"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_alignLeft="@+id/image_question6"
+            android:layout_alignStart="@+id/image_question6" />
+
+
+
+
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_start"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/image_question9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_question9" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_link"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_link_focus"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_link"
+            android:layout_marginLeft="15dp"
+            android:text="Hold negotiation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_negotiate"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_link"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_negotiate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round10"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_round10"
+            android:layout_below="@+id/view_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question10"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_alignLeft="@+id/image_question6"
+            android:layout_alignStart="@+id/image_question6" />
+
+
+
+
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_link"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/txt_weeek_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action10"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_question10" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_nego"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_negotiate"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_nego"
+            android:layout_marginLeft="15dp"
+            android:text="Hold Presentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_sign_contract"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_nego"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_sign_contract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round11"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question11"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_alignTop="@+id/image_more_action11"
+            android:layout_alignLeft="@+id/image_question10"
+            android:layout_alignStart="@+id/image_question10" />
+
+
+
+
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_nego"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/image_question11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action11"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/txt_sign_contract" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_sign_contract"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_sign_contract"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_demo"
+            android:text="Make Phone call"
+            android:layout_below="@+id/view_sign_contract"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_sign_contract"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round12"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question12"
+            android:src="@drawable/disc_yellow_question_mark"
+            android:layout_alignBottom="@+id/image_round12"
+            android:layout_alignLeft="@+id/image_question13"
+            android:layout_alignStart="@+id/image_question13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action12"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignTop="@+id/image_question12"
+            android:layout_alignLeft="@+id/image_more_action11"
+            android:layout_alignStart="@+id/image_more_action11"
+            android:layout_alignBottom="@+id/image_round12" />
+
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_demo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_demo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_demo"
+            android:layout_marginLeft="15dp"
+            android:text="Demo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_demo2"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_demo"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_demo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round13"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_round13"
+            android:layout_below="@+id/view_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question13"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_alignLeft="@+id/image_question6"
+            android:layout_alignStart="@+id/image_question6" />
+
+
+
+
+
+
+        <ImageView
+
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_demo"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/image_question13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action13"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_question13" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_demo2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_demo2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_demo2"
+            android:layout_marginLeft="15dp"
+            android:text="demo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_demo3"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_demo2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_demo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round14"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_round14"
+            android:layout_below="@+id/view_demo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question14"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_alignLeft="@+id/image_question6"
+            android:layout_alignStart="@+id/image_question6" />
+
+
+
+
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_demo2"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/image_question14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action14"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_question14" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_demo3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_demo3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_demo3"
+            android:layout_marginLeft="15dp"
+            android:text="demo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_demo4"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_demo3"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_demo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_round15"
+            android:src="@drawable/icon_question_mark"/>
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_round15"
+            android:layout_below="@+id/view_demo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_question15"
+            android:src="@drawable/disc_red_question_mark"
+            android:layout_alignLeft="@+id/image_question6"
+            android:layout_alignStart="@+id/image_question6" />
+
+
+
+
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_demo3"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/image_question15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_more_action15"
+            android:src="@drawable/icon_more_actions"
+            android:layout_alignBottom="@+id/image_question15" />
+
+-->       <!-- <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/view_demo4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:layout_below="@+id/txt_demo4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />-->
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

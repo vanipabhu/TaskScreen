@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include_notask"
+        layout="@layout/custom_lenghtybar"/>
+
+    <ImageView
+        android:id="@+id/image_task_notask"
+        android:padding="10dp"
+        android:src="@drawable/icon_add_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No tasks to show in list "
+        android:layout_below="@+id/image_task_notask"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

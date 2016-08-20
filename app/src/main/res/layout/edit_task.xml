@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:background="#f8bd6f"
+        android:id="@+id/rl_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/edit_task_cancel"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/edit_task"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="Edit Task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/edit_task_done"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/edit_task_done"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edit_task_cancel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/rl_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_below="@+id/rl_add"
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_account"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_account_name"
+                android:text="Account:"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:gravity=""
+                android:layout_toRightOf="@+id/txt_account_name"
+                android:textSize="15sp"
+                android:hint="abg"
+                android:id="@+id/txt_edit_task_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageView"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:src="@drawable/icon_contacts_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rl_account"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_account"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/rl_contact_opp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_contacts_opp"
+                android:text="Contacts:"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/txt_contacts_opp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <EditText
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:hint="Vani Shasha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_contacts_opp"
+                    android:background="@android:color/transparent"
+                    android:layout_toLeftOf="@+id/image_contact_opp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:src="@drawable/icon_contacts_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_contact_opp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rl_contact_opp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_contact_opp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/rl_opp_team"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_opp_team"
+                android:text="Opportunity:"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/txt_opp_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <Spinner
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rl_opp_team"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_opp_team"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/rl_description_opp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_description_opp"
+                android:text="Category:"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/txt_description_opp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rl_description_opp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_description_opp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/rl_product_opp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_product_group"
+                android:text="Focus:"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <Spinner
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/txt_product_group"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rl_product_opp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_product_opp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/rl_sales_opp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_sales_process"
+                android:text="Date and Time:"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_sales"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txt_sales_process"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/txt_sales_process"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:hint="22-july-2016"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_calendar_edit_task"
+                android:background="@android:color/transparent"
+                android:layout_toLeftOf="@+id/image_calender_edittask"
+                />
+
+            <ImageView
+
+                android:src="@drawable/icon_meetings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_calender_edittask"
+                android:layout_marginRight="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rl_sales_opp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_sales_opp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/rl_contract_date"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_contract_date"
+                android:text="Owner:"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+           <!-- <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_contacts_oppo"
+                android:background="@android:color/transparent"
+                android:layout_toRightOf="@+id/txt_contract_date"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />-->
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/txt_contract_date"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:hint="Vani Shasha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_owner_edit_task"
+                android:background="@android:color/transparent"
+                android:layout_toLeftOf="@+id/image_contact_owner_edittask"
+                />
+
+            <ImageView
+                android:src="@drawable/icon_contacts_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_contact_owner_edittask"
+                android:layout_marginRight="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rl_contract_date"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_contract_date"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/rl_orderrows"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_first"
+                android:text="Note:"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:text="180"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_first"
+                android:background="@android:color/transparent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rl_notes_edit"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/rl_orderrows">
+
+            <EditText
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:maxLength="180"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_note"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rl_notes_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"/>
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view_note"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/txt_edit_task_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tag"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <Spinner
+                android:layout_toRightOf="@+id/txt_edit_task_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                 />
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
