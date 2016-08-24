@@ -6,10 +6,11 @@
     <RelativeLayout
         android:background="#f2f2f2"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="wrap_content"
         android:id="@+id/rl_task_appbar">
 
         <RelativeLayout
+            android:layout_marginBottom="5dp"
             android:id="@+id/rl_delegation_task_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -52,30 +53,27 @@
 
 
             <TextView
-                android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:gravity="center"
                 android:textColor="#000"
-                android:textSize="20sp"
+                android:textSize="22sp"
                 android:text="Delegation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_delegation_lead_heading"
                 android:layout_centerHorizontal="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignBottom="@+id/image_running" />
+                android:layout_alignParentTop="true" />
 
             <TextView
                 android:layout_marginBottom="3dp"
-                android:layout_marginTop="3dp"
                 android:layout_below="@+id/txt_delegation_lead_heading"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:gravity="center"
-                android:textColor="#000"
-                android:textSize="10sp"
-                android:text="Karthika Testing"
+                android:textColor="#6b6b6b"
+                android:textSize="18sp"
+                android:text="Karthik Testing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_delegation_heading_name"
@@ -84,6 +82,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:layout_marginBottom="5dp"
             android:gravity="center"
             android:id="@+id/rl_delegation_task_viewer"
             android:layout_width="wrap_content"
@@ -91,22 +90,25 @@
             android:layout_below="@+id/rl_delegation_task_header"
             android:layout_centerHorizontal="true">
 
-            <Button
+            <TextView
+                android:gravity="center"
+                android:textSize="16sp"
                 android:background="@drawable/drawable_rectangle_background_purple_full"
                 android:id="@+id/txt_delegationtask_task"
                 android:textColor="#fff"
-                android:text="Tasks"
+                android:text="Tasks (3)"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="35dp" />
 
-            <Button
+            <TextView
+                android:gravity="center"
                 android:background="@drawable/drawable_rectangle_background_purple"
-
+                android:textSize="16sp"
                 android:layout_marginLeft="0dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:id="@+id/txt_delegationtask_leads"
-                android:text="Leads"
+                android:text="Leads (0)"
                 android:layout_toRightOf="@+id/txt_delegationtask_task" />
 
 
@@ -115,27 +117,29 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:layout_marginBottom="5dp"
             android:layout_below="@+id/rl_delegation_task_viewer"
             android:id="@+id/rl_delegation_task_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_marginLeft="70dp"
-                android:padding="10dp"
+                android:layout_marginLeft="60dp"
+                android:padding="8dp"
                 android:src="@drawable/search_dark"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:id="@+id/image_del_tasksearch_task"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="70dp" />
+                android:layout_marginStart="60dp" />
 
             <EditText
-                android:textSize="15sp"
-                android:textColor="#000"
-                android:textColorHint="#000"
+                android:cursorVisible="false"
+                android:textSize="16sp"
+                android:textColor="#6b6b6b"
+                android:textColorHint="#6b6b6b"
                 android:hint="Search for a lead in delegation"
                 android:id="@+id/edit_delegation_tasksearch"
                 android:layout_width="match_parent"
@@ -149,13 +153,51 @@
 
         </RelativeLayout>
 
-        <include
-            android:layout_marginTop="2dp"
-            android:id="@+id/custom_year_layout"
-            layout="@layout/custom_year"
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rl_delegation_task_search"/>
+            android:layout_below="@+id/rl_delegation_task_search">
+
+
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"
+                android:padding="7dp"
+                android:gravity="center"
+                android:id="@+id/textYearSelection_deltask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:drawableRight="@drawable/icon_dropdown_white_small"
+                android:drawablePadding="9dp"
+                android:background="@drawable/textview_border_purple"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:id="@+id/textYearSelection_numeric_deltask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016"
+                android:drawableRight="@drawable/icon_dropdown_vilote"
+                android:drawablePadding="9dp"
+                android:textColor="#000"
+                android:padding="6dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+
 
 
 
@@ -167,14 +209,13 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_delegation_task_carditems"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        
 
-    </LinearLayout>
+    <include
+
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"
+       layout="@layout/task_carditem"
+       android:layout_below="@+id/rl_task_appbar"/>
 
 </RelativeLayout>

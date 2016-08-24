@@ -10,7 +10,7 @@
         android:layout_height="50dp">
 
         <TextView
-            android:id="@+id/edit_task_cancel"
+            android:id="@+id/txt_filter_cancel"
             android:layout_marginStart="10dp"
             android:textSize="20sp"
             android:layout_marginLeft="5dp"
@@ -22,25 +22,25 @@
 
         <TextView
             android:gravity="center"
-            android:id="@+id/edit_task"
+            android:id="@+id/txt_filter"
             android:textSize="20sp"
             android:textColor="#fff"
             android:text="Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:layout_alignTop="@+id/edit_task_done"
+            android:layout_alignTop="@+id/txt_filter_cancel"
             android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_marginRight="10dp"
-            android:id="@+id/edit_task_done"
+            android:id="@+id/txt_filter_done"
             android:textSize="20sp"
             android:textColor="#fff"
             android:text="Done"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/edit_task_cancel"
+            android:layout_alignTop="@+id/txt_filter_cancel"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>

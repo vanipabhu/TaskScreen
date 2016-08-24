@@ -15,8 +15,7 @@
             android:src="@drawable/running_dark"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:id="@+id/image_running"
-
+            android:id="@+id/image_running_task"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
@@ -26,9 +25,9 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:id="@+id/icon_plus"
-            android:layout_alignTop="@+id/image_running"
-            android:layout_toLeftOf="@+id/image_running"
-            android:layout_toStartOf="@+id/image_running" />
+            android:layout_alignTop="@+id/image_running_task"
+            android:layout_toLeftOf="@+id/image_running_task"
+            android:layout_toStartOf="@+id/image_running_task" />
 
 
         <ImageView

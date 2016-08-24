@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_leads_appbar">
+
+        <RelativeLayout
+            android:layout_marginBottom="5dp"
+            android:id="@+id/rl_delegation_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@drawable/running_dark"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/image_running"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:padding="7dp"
+                android:src="@drawable/menubar_dark"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/icon_navigation_bar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/rl_searchview_task" />
+
+            <TextView
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:text="Delegation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_delegation_lead_heading"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                 />
+
+            <TextView
+                android:textColor="#6b6b6b"
+                android:textSize="18sp"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/txt_delegation_lead_heading"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Karthik Testing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_delegation_heading_name"
+                android:layout_centerHorizontal="true"
+                />
+            </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_marginBottom="5dp"
+              android:gravity="center"
+              android:id="@+id/rl_delegation_viewer"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_below="@+id/rl_delegation_header"
+              android:layout_centerHorizontal="true">
+
+              <TextView
+                  android:gravity="center"
+                  android:textSize="16sp"
+                  android:background="@drawable/drawable_rectangle_background_purple"
+                  android:id="@+id/txt_delegationleads_task"
+                  android:text="Tasks (3)"
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp" />
+
+              <TextView
+                  android:gravity="center"
+                  android:textSize="16sp"
+                  android:background="@drawable/drawable_rectangle_background_purple_full"
+                  android:textColor="#fff"
+                  android:layout_marginLeft="0dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp"
+                  android:id="@+id/txt_delegationleads_leads"
+                  android:text="Leads (0)"
+                  android:layout_toRightOf="@+id/txt_delegationleads_task" />
+
+
+
+
+          </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/rl_delegation_viewer"
+            android:id="@+id/rl_delegation_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:padding="8dp"
+                android:src="@drawable/search_dark"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/image_search_task"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp" />
+
+            <EditText
+                android:cursorVisible="false"
+                android:textSize="16sp"
+                android:textColor="#6b6b6b"
+                android:textColorHint="#6b6b6b"
+                android:hint="Search for a lead in delegation"
+                android:id="@+id/edit_tasksearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_toRightOf="@+id/image_search_task"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/image_search_task" />
+
+
+
+        </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_delegation_search">
+
+
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:padding="7dp"
+            android:gravity="center"
+            android:id="@+id/textYearSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:drawableRight="@drawable/icon_dropdown_white_small"
+            android:drawablePadding="9dp"
+            android:background="@drawable/textview_border_purple"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+
+
+            android:id="@+id/textYearSelection_numeric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016"
+            android:drawableRight="@drawable/icon_dropdown_vilote"
+            android:drawablePadding="9dp"
+            android:textColor="#000"
+            android:padding="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    <TextView
+        android:textColor="#6b6b6b"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txt_delegation_no_leads"
+        android:text="No lead in the list"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/rl_leads_appbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp" />
+
+
+
+
+
+
+
+</RelativeLayout>

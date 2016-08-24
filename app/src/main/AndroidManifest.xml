@@ -30,6 +30,10 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".activity.No_task_Activity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.DelegationLeadsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.DelegationTasksActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

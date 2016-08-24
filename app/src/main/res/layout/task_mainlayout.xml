@@ -124,12 +124,26 @@
 
     </RelativeLayout>
 
-    <include
+    <!--<include
         layout="@layout/task_carditem"
         android:id="@+id/task_carditems"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl_task_appbar"/>
+        android:layout_below="@+id/rl_task_appbar"/>-->
+
+   <!-- <TextView
+        android:id="@+id/textYearSelection"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:drawableRight="@drawable/icon_dropdown"
+        android:drawablePadding="7dp"
+        android:background="@drawable/drawable_rectangle_background_grey"
+        android:textColor="#FFFFFF"
+        android:padding="7dp"
+        android:layout_marginRight="7dp"
+        />-->
 
 
 
