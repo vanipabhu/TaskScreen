@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.taskscreen.R;
@@ -18,6 +19,7 @@ import com.taskscreen.R;
 public class MainActivity extends AppCompatActivity {
 
     TextView task_save,task_cancel;
+    ImageView image_running;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentab);
             }
         });
+       /* image_running= (ImageView) findViewById(R.id.image_running);
+        image_running.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intenti=new Intent(getApplicationContext(),DelegationLeadsActivity.class);
+                startActivity(intenti);
+            }
+        });*/
 
         Window window = MainActivity.this.getWindow();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

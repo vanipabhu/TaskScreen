@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/rl_opp_addproductgroup"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+            android:id="@+id/txt_opp_addproductgroup_cancel"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_opp_addproductgroup"
+            android:textSize="20sp"
+            android:textColor="#a0a7b7"
+            android:text="Add Product Group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_alignTop="@+id/txt_opp_addproductgroup_done"
+            android:layout_toLeftOf="@+id/txt_opp_addproductgroup_done"
+            android:layout_toStartOf="@+id/txt_opp_addproductgroup_done" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/txt_opp_addproductgroup_done"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_opp_addproductgroup_cancel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    '<RelativeLayout
+        android:id="@+id/rl_opp_main_addproductgroup"
+        android:layout_below="@+id/rl_opp_addproductgroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#414141"
+            android:text="Name:"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_opp_productgroup_name"/>
+
+        <EditText
+            android:textColor="#6e6e6e"
+            android:textColorHint="#c4c4c4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="required"
+            android:background="@android:color/transparent"
+            android:id="@+id/et_opp_productgroupname"
+            android:layout_toRightOf="@+id/txt_opp_productgroup_name"
+            android:layout_alignRight="@+id/view_addproductgroupname"
+            android:layout_alignEnd="@+id/view_addproductgroupname" />
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/view_addproductgroupname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d7d7d7"
+            android:layout_below="@+id/txt_opp_productgroup_name"/>
+
+        <TextView
+            android:layout_below="@+id/view_addproductgroupname"
+            android:textSize="18sp"
+            android:textColor="#414141"
+            android:text="Default sales process:"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_opp_productgroup_default"/>
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_below="@+id/view_addproductgroupname"
+            android:textColor="#6e6e6e"
+            android:textColorHint="#c4c4c4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="required"
+            android:id="@+id/txt_opp_productgroup_defaultsales"
+            android:layout_toLeftOf="@+id/img_opp_addproductgroup_default"
+            android:layout_toRightOf="@+id/txt_opp_productgroup_default"
+            android:layout_toEndOf="@+id/txt_opp_productgroup_default" />
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:padding="7dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/view_addproductgroupname"
+            android:src="@drawable/icon_dropdown"
+            android:id="@+id/img_opp_addproductgroup_default"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+       <!-- <View
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d7d7"
+            android:layout_below="@+id/txt_opp_productgroup_default"/>-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

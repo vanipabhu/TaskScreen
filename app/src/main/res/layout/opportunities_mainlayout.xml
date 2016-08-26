@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout
+    android:background="#f2f2f2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_task_appbar">
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:id="@+id/rl_opportunities_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/running_dark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/image_running_opportunities"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:padding="7dp"
+            android:src="@drawable/menubar_dark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon_navigation_bar_opportunities"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <ImageView
+
+            android:layout_toRightOf="@+id/icon_navigation_bar_opportunities"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:padding="8dp"
+            android:src="@drawable/bt_inactive_history_dark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/img_opportunities_clock"
+            />
+
+
+        <ImageView
+            android:layout_toLeftOf="@+id/image_running_opportunities"
+            android:layout_marginTop="2dp"
+            android:padding="8dp"
+            android:src="@drawable/puls_red"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/img_opportunities_plus"
+             />
+
+   <!--     <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:text="Opportunities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_opportunities_plus"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />-->
+
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:text="Opportunities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_opportunities_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_marginBottom="3dp"
+            android:layout_below="@+id/txt_opportunities_heading"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="#6b6b6b"
+            android:textSize="18sp"
+            android:text="Karthik Testing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_opportunities_heading_name"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#b4cd55"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:id="@+id/rl_opportunities_message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_opportunities_header"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/txt_opportunities_message"
+            android:textColor="#fff"
+            android:text="Congratulations! You have reached your target!"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/rl_opportunities_message"
+        android:id="@+id/rl_opportunities_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="90dp"
+            android:padding="8dp"
+            android:src="@drawable/search_dark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_opportunities_task"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="90dp" />
+
+        <EditText
+            android:cursorVisible="false"
+            android:textSize="16sp"
+            android:textColor="#6b6b6b"
+            android:textColorHint="#6b6b6b"
+            android:hint="Search opportunities"
+            android:id="@+id/edit_delegation_tasksearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@+id/img_opportunities_task"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/img_opportunities_task" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_opportunities_year"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_opportunities_search">
+
+
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:padding="7dp"
+            android:gravity="center"
+            android:id="@+id/txt_opportunities_yaer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:drawableRight="@drawable/icon_dropdown_white_small"
+            android:drawablePadding="9dp"
+            android:background="@drawable/textview_border_peach"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:id="@+id/txt_opportunities_yearnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016"
+            android:drawableRight="@drawable/icon_dropdown_orange"
+            android:drawablePadding="9dp"
+            android:textColor="#000"
+            android:padding="7dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+    <include layout="@layout/opportunities_details_carditems"
+        android:layout_below="@+id/rl_task_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+

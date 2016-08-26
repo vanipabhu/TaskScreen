@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/icon_start_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_opp_details"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/txt_opp_detailname"
+        android:layout_alignTop="@+id/txt_opp_detailsdate" />
+
+    <TextView
+        android:textColor="#f0836c"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="july 15, 2016"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_opp_details"
+        android:id="@+id/txt_opp_detailsdate"/>
+
+    <TextView
+        android:textColor="#414141"
+        android:textSize="15sp"
+        android:id="@+id/txt_opp_detailsnumber"
+        android:layout_marginTop="3dp"
+        android:text="12334"
+        android:layout_toRightOf="@+id/img_opp_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_opp_detailsdate"/>
+
+    <TextView
+        android:textColor="#6e6e6e"
+        android:textSize="16sp"
+        android:id="@+id/txt_opp_detailname"
+        android:layout_marginTop="3dp"
+        android:text="description"
+        android:layout_toRightOf="@+id/img_opp_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_opp_detailsnumber"/>
+
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:src="@drawable/user_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_opp_detailsuser"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/txt_opp_detailname"
+        android:layout_alignTop="@+id/txt_opp_detailsdate" />
+
+    <View
+        android:id="@+id/view_details"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d8d8d8"
+        android:layout_below="@+id/img_opp_details"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/view_details"
+        android:id="@+id/rl_opp_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_opp_details_closed"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <TextView
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:text="closed sales"
+                android:id="@+id/txt_oppdetails_closedsales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="15sp"
+                android:text="closed profit"
+                android:id="@+id/txt_oppdetails_closedprofit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txt_oppdetails_closedsales"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/txt_oppdetails_closedprofit"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_contact_in_progress_big"
+                android:layout_width="20dp"
+               android:layout_height="20dp"
+                android:id="@+id/img_opp_details_contact"/>
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/img_opp_details_contact"
+                android:src="@drawable/icon_task_in_progress_big"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:id="@+id/img_opp_details_task"/>
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/img_opp_details_task"
+                android:src="@drawable/icon_bar_meeting"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/img_opp_details_calender"
+                android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_below="@+id/rl_opp_details_closed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#414141"
+                android:text="120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_opp_details_closedsalesvalue"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp" />
+
+                <TextView
+                    android:textColor="#414141"
+                    android:text="4.8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_details_closedprofitvalue"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#414141"
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_details_contactvalue"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/txt_opp_details_closedprofitvalue"
+                    android:layout_toEndOf="@+id/txt_opp_details_closedprofitvalue"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginStart="68dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#414141"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_details_taskvalue"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/txt_opp_details_contactvalue"
+                    android:layout_toEndOf="@+id/txt_opp_details_contactvalue"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginStart="31dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#414141"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_details_calendervalue"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginEnd="24dp" />
+
+                </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

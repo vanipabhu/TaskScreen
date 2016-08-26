@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_opp_addorderrow"
+        android:background="@color/peach_opportunities"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/txt_oppaddorderrow_cancel"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_oppaddorderrow"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:text="Add Order Row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_oppaddorderrow_cancel"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:id="@+id/txt_oppaddorderrow_done"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_oppaddorderrow"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/rl_opp_addorderrow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_below="@+id/rl_opp_addorderrow"
+            android:id="@+id/rl_opp_addorderrow_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_opp_addorderrow_product"
+                >
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_productheader"
+                    android:text="Product:"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#6e6e6e"
+                    android:textSize="18sp"
+                    android:hint="abc bhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_producsname"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_opp_addorderrow_productheader"
+                    android:layout_toEndOf="@+id/txt_opp_addorderrow_productheader" />
+
+
+                <ImageView
+                    android:padding="3dp"
+                    android:src="@drawable/icon_dropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_opp_addorderrow_product"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+           <View
+               android:id="@+id/view_opp_addorderrow_product"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_opp_addorderrow_product"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d8d8d8"/>
+            <RelativeLayout
+                android:layout_below="@+id/view_opp_addorderrow_product"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_opp_addorderrow_type"
+                >
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_type"
+                    android:text="Type:"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#6e6e6e"
+                    android:textSize="18sp"
+                    android:hint="Required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_typename"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_opp_addorderrow_type"
+                    android:layout_toEndOf="@+id/txt_opp_addorderrow_type" />
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_dropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_opp_addorderrow_type"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_opp_addorderrow_type"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_opp_addorderrow_type"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+            <RelativeLayout
+                android:layout_below="@+id/view_opp_addorderrow_type"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_opp_addorderrow_numofunits"
+                >
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_numofunits"
+                    android:text="Number of units:"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:cursorVisible="false"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#6e6e6e"
+                    android:textSize="18sp"
+                    android:hint="required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_opp_addorderrow_numofunitsname"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_opp_addorderrow_numofunits"
+                    android:layout_toEndOf="@+id/txt_opp_addorderrow_numofunits" />
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_opp_addorderrow_numberofunits"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_opp_addorderrow_numofunits"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+            <RelativeLayout
+                android:layout_below="@+id/rl_opp_addorderrow_numofunits"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_opp_addorderrow_price"
+                >
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_price"
+                    android:text="Price per unit:"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:cursorVisible="false"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#6e6e6e"
+                    android:textSize="18sp"
+                    android:hint="required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_opp_addorderrow_pricename"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_opp_addorderrow_price"
+                    android:layout_toEndOf="@+id/txt_opp_addorderrow_price" />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_opp_addorderrow_price"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_opp_addorderrow_price"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+            <RelativeLayout
+                android:layout_below="@+id/view_opp_addorderrow_price"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_opp_addorderrow_Delstartdate"
+                >
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_delstartdate"
+                    android:text="Delivery start date:"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#6e6e6e"
+                    android:textSize="18sp"
+                    android:hint="Sep 3, 2016"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_delstartdatevalue"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_opp_addorderrow_delstartdate"
+                    android:layout_toEndOf="@+id/txt_opp_addorderrow_delstartdate" />
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_opp_addorderrow_delstartdate"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_opp_addorderrow_Delstartdate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_opp_addorderrow_Delstartdate"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+            <RelativeLayout
+                android:layout_below="@+id/view_opp_addorderrow_Delstartdate"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_opp_addorderrow_delenddate"
+                >
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_delenddate"
+                    android:text="Delivery end date:"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#6e6e6e"
+                    android:textSize="18sp"
+                    android:hint="Nov 6th, 2017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_delenddatevalue"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_opp_addorderrow_delenddate"
+                    android:layout_toEndOf="@+id/txt_opp_addorderrow_delenddate" />
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_opp_addorderrow_delenddate"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_opp_addorderrow_delenddate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_opp_addorderrow_delenddate"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/view_opp_addorderrow_delenddate"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_opp_addorderrow_margin"
+                >
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp_addorderrow_marginheader"
+                    android:text="Margin (%):"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:cursorVisible="false"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#6e6e6e"
+                    android:textSize="18sp"
+                    android:hint="required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_opp_addorderrow_marginheadername"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_opp_addorderrow_marginheader"
+                    android:layout_toEndOf="@+id/txt_opp_addorderrow_marginheader" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
