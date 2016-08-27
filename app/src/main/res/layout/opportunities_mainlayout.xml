@@ -215,10 +215,137 @@
     </RelativeLayout>
 </RelativeLayout>
 
-    <include layout="@layout/opportunities_details_carditems"
+    <include
+        android:id="@+id/include_carditems_opportunities"
+        layout="@layout/opportunities_details_carditems"
         android:layout_below="@+id/rl_task_appbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:weightSum="8"
+        android:id="@+id/ll_opportunities_bottombar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_oppdetails_bottomprio"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_tab_prioritized_big"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_opp_bottomPrioritized"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Prioritized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_opp_bottompriortized"
+                android:textColor="#fff"
+                android:layout_below="@+id/img_opp_bottomPrioritized"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_opp_bottomfav"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_tab_favorite_big"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_opp_bottomfav"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Favourites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_opp_bottomfav"
+                android:textColor="#fff"
+                android:layout_below="@+id/img_opp_bottomfav"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_opp_bottomrecent"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_tab_recent_big"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_opp_bottomrecent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Recents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_opp_bottomprecent"
+                android:textColor="#fff"
+                android:layout_below="@+id/img_opp_bottomrecent"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_opp_bottomdetails"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_tab_detail_big"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_opp_bottomdetails"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_opp_bottomdetails"
+                android:textColor="#fff"
+                android:layout_below="@+id/img_opp_bottomdetails"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 
 
 

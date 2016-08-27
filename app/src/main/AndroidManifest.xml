@@ -18,21 +18,44 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Edit_Task_Activity"
+        <activity
+            android:name=".activity.Edit_Task_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Filter_task"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Orderby_task"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Task_MainScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Task_webinar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.No_task_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DelegationLeadsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DelegationTasksActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.OpportunitiesMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.EditOpportunities"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.OpportunitiesAddProductGroup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.OpportunitiesSelectSalesProcess"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.Filter_task"
+        <activity android:name=".activity.OpportunitiesAddOrderRow"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.Orderby_task"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.Task_MainScreen"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.Task_webinar"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.No_task_Activity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.DelegationLeadsActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.DelegationTasksActivity"
+        <activity android:name=".activity.OpportunitiesUserProfile"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 

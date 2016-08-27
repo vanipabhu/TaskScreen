@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar_opp_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/img_oppuserprofile_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/bt_previous"
+                android:tint="#6e6e6e" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_oppuserprofile_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_tab_favorite"
+                android:tint="#6e6e6e" />
+
+            <ImageView
+                android:id="@+id/img_oppuserprofile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_edit_gray"
+                android:tint="#6e6e6e" />
+
+            <ImageView
+                android:id="@+id/img_oppuserprofile_moreaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_more_actions"
+                android:layout_gravity="center_vertical"
+                android:tint="#6e6e6e" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_toolbar_opp_profile">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_profile_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_upperHalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#F2F2F2"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_below="@+id/ll_upperHalf"
+                    android:background="#f0836c" />
+
+                <ImageView
+                    android:id="@+id/iv_profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_user" />
+
+                <TextView
+                    android:id="@+id/tv_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_profile_pic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Huyen doyyy"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_profile_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_profile_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="100dp"
+                    android:text="huyen@abc.com"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/first_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_profile_view"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <RelativeLayout
+                    android:id="@+id/rl_oppuserprofiletasks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/img_oppuserprofile_tasks"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_task_in_progress_big" />
+
+                    <com.taskscreen.activity.TextViewRegular
+                        android:id="@+id/txt_oppuserprofile_tasks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_oppuserprofile_tasks"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Tasks"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_oppuserprofile_appoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/img_oppuserprofile_appointment"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_meetings" />
+
+                    <com.taskscreen.activity.TextViewRegular
+                        android:id="@+id/txt_oppuserprofile_appointment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_oppuserprofile_appointment"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:singleLine="true"
+                        android:text="Appointment"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_oppuserprofile_leads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/img_oppuserprofile_leads"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_leads_big" />
+
+                    <TextView
+                        android:id="@+id/txt_oppuserprofile_leads"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_oppuserprofile_leads"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Leads"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_oppuserprofile_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/img_oppuserprofile_actionplan"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/percentage" />
+
+                    <TextView
+                        android:id="@+id/txt_oppuserprofile_actionplan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_oppuserprofile_actionplan"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Action plan"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_oppuserprofile_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/img_oppuserprofile_orderrows"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_meetings" />
+
+                    <TextView
+                        android:id="@+id/txt_oppuserprofile_orderrows"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_oppuserprofile_orderrows"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:singleLine="true"
+                        android:text="Order rows"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_oppuserprofile_secondlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_row"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <RelativeLayout
+                    android:id="@+id/notes_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/img_oppuserprofile_documents"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_document_doc" />
+
+                    <com.taskscreen.activity.TextViewSemiBold
+                        android:id="@+id/txt_oppuserprofile_documents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_oppuserprofile_documents"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Documents"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/photos_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/img_oppuserprofile_photo"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_photo" />
+
+                    <TextView
+                        android:id="@+id/txt_oppuserprofile_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_oppuserprofile_photo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Photos"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/doc_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/img_oppuserprofile_note"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_note" />
+
+                    <TextView
+                        android:id="@+id/txt_oppuserprofile_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_oppuserprofile_note"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Notes"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/collegues_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/collegues"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/plus_orange" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/collegues"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Colleagues"
+                        android:textColor="#414141"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/plus_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:id="@+id/plus"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/puls_red"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/plus"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Colleagues"
+                        android:textColor="#414141"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_underlayout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/ll_oppuserprofile_secondlayout"
+                android:layout_marginTop="3dp"
+                android:background="#f2f2f2" />
+
+            <RelativeLayout
+                android:id="@+id/rl_oppuserprofile_workload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_underlayout"
+                android:layout_marginTop="5dp">
+
+                <com.taskscreen.activity.TextViewSemiBold
+                    android:id="@+id/txt_oppuserprof_workload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Workload"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img_oppuserprof_dropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_arrow_down"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_workloadinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_oppuserprof_workload">
+
+                    <TextView
+                        android:id="@+id/txt_workload_appointment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Appointments Left" />
+
+                    <TextView
+                        android:id="@+id/txt_workload_appointmentvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0" />
+
+                    <View
+                        android:id="@+id/view_userprofileappoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt_workload_appointment"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#d8d8d8" />
+
+
+                    <TextView
+                        android:id="@+id/txt_workload_remaining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_userprofileappoint"
+                        android:layout_margin="10dp"
+                        android:text="Remaining work effort (h)" />
+
+                    <TextView
+                        android:id="@+id/txt_workload_remainingtvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/view_userprofileappoint"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0" />
+
+                    <View
+                        android:id="@+id/view_userprofileremaining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt_workload_remaining"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#d8d8d8" />
+
+
+                    <TextView
+                        android:id="@+id/txt_workload_salesprocess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_userprofileremaining"
+                        android:layout_margin="10dp"
+                        android:text="Sales process" />
+
+                    <TextView
+                        android:id="@+id/txt_workload_salesprocessvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/view_userprofileremaining"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="sales by salesbox" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_below_workload"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/ll_oppuserprofile_secondlayout"
+                android:layout_marginTop="3dp"
+                android:background="#f2f2f2" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
