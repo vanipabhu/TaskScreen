@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/rl_heading_display"
+        >
+        <ImageView
+            android:backgroundTint="#fff"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menubar_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_navi_displayoption"/>
+
+
+        <TextView
+            android:id="@+id/txt_displayoption"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display option"
+            android:layout_alignTop="@+id/txt_chngepassworddone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_heading_display"
+        android:id="@+id/rl_screenfirst"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_screen"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Screen"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/txt_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_displaystartscreen">
+            <TextView
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="Contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_displayoptionstart"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageViewcontact"
+                android:layout_toStartOf="@+id/imageViewcontact" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_dropdown"
+                android:id="@+id/imageViewcontact"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_secondlayout"
+        android:layout_below="@+id/rl_screenfirst"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#e9f1ff"
+        >
+
+        <TextView
+            android:textColor="#414141"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_menu"
+            android:text="Menu Option"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:textColor="#414141"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_display"
+            android:text="Display"
+            android:layout_alignTop="@+id/text_menu"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:textColor="#414141"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_tab"
+            android:text="Tab"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="40dp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/rl_secondlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_thirdlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_secondlayout"
+            >
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_tasks"
+                >
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_tasks"
+                    android:text="Tasks:"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_first"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_displayoptiontasks"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_tasks"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"/>
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/view_displayoptiontasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_delegation">
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_delegation"
+                    android:text="Delegation:"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_delegation"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/image_delegation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textSize="16sp"
+                        android:text="Tasks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_displayoptiondelege"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/imageView3"
+                        android:layout_toStartOf="@+id/imageView3" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_dropdown"
+                        android:id="@+id/imageView3" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_displayoptiondele"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_delegation"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/view_displayoptiondele"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/rl_opp"
+                >
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_opp"
+                    android:text="Opportunities:"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_opp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/image_opp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout2">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textSize="16sp"
+                        android:text="Details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_displayoptionOpp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/img_delegeopp_opp"
+                        android:layout_toStartOf="@+id/img_delegeopp_opp" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_dropdown"
+                        android:id="@+id/img_delegeopp_opp" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+
+                android:id="@+id/view_displayoptionopp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_opp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/view_displayoptionopp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/rl_accounts">
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_accounts"
+                    android:text="Account:"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_account"
+                    android:background="@android:color/transparent"
+                    android:layout_alignBottom="@+id/relativeLayout3"
+                    android:layout_centerHorizontal="true" />
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/image_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout3">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textSize="16sp"
+                        android:text="Details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_displayoptionAccount"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/img_delegeopp_Account"
+                        android:layout_toStartOf="@+id/img_delegeopp_Account" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_dropdown"
+                        android:id="@+id/img_delegeopp_Account" />
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/view_displayoptionacc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_accounts"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/view_displayoptionacc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_contacts">
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_contacts"
+                    android:text="Contacts:"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_contact"
+                    android:background="@android:color/transparent"
+                    android:layout_alignBottom="@+id/txt_contacts"
+                    android:layout_centerHorizontal="true" />
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/image_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textSize="16sp"
+                        android:text="Details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_displayoptionContact"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/img_delegeopp_contact"
+                        android:layout_toStartOf="@+id/img_delegeopp_contact" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_dropdown"
+                        android:id="@+id/img_delegeopp_contact" />
+                </RelativeLayout>
+
+                </RelativeLayout>
+            <View
+                android:id="@+id/view_displayoptioncont"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/view_displayoptioncont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_appointments"
+                >
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_appointments"
+                    android:text="Appointments:"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_appointments"
+                    android:layout_centerHorizontal="true" />
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/image_appointments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textSize="16sp"
+                        android:text="Details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_displayoptionAppo"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/img_delegeopp_Appo"
+                        android:layout_toStartOf="@+id/img_delegeopp_Appo" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_dropdown"
+                        android:id="@+id/img_delegeopp_Appo" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/view_displayoptionApp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_appointments"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/view_displayoptionApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_call_list">
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_call_list"
+                    android:text="Call List:"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/image_call"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_displayoptioncall"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_call_list"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/rl_call_list"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/rl_campaigns"
+               android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_campaigns"
+                    android:text="Campaigns:"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <ImageView
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/edit_campaigns"
+                    android:background="@android:color/transparent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_displayoptioncamp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/rl_campaigns"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/view_displayoptioncamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_leads"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_first"
+                    android:text="Leads:"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/edit_first"
+                   android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_displayoptionleads"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/rl_leads"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/view_displayoptionleads"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/rl_insights"
+               android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_insights"
+                    android:text="Insights:"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/edit_insights"
+                    android:background="@android:color/transparent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_displayoptioninsights"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_insights"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/view_displayoptioninsights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_mysettings"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:textColor="#414141"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_mysettings"
+                    android:text="My Settings:"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_green_tick"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/edit_mysetting"
+                    android:background="@android:color/transparent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/edit_mysetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textSize="16sp"
+                        android:text="Personal Info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_displayoptionsetting"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/img_delegeopp_setting"
+                        android:layout_toStartOf="@+id/img_delegeopp_setting" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_dropdown"
+                        android:id="@+id/img_delegeopp_setting" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rl_mysettings"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#d5d8dc"/>
+
+
+
+
+
+
+
+
+
+
+            <!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

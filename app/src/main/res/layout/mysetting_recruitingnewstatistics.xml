@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/rl_heading_recruiting"
+        >
+        <ImageView
+            android:backgroundTint="#fff"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menubar_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_navi_recruiting"/>
+
+
+        <TextView
+            android:id="@+id/txt_recruiting"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recruiting new users"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_mysettingrecruitingtab"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_heading_recruiting">
+    <LinearLayout
+
+        android:id="@+id/rl_mysetting_storagetab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:weightSum="3"
+       >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/drawable_rectangle_background_main"
+            android:id="@+id/txt_mysetting_recruitingbilling"
+            android:textColor="@color/colorPrimary"
+            android:text="Billing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/txt_mysetting_recruitingbilling"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/drawable_rectangle_background_main"
+            android:id="@+id/txt_mysetting_recruit"
+            android:textColor="@color/colorPrimary"
+            android:text="Recruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@drawable/drawable_rectangle_background_mainfull"
+            android:textSize="16sp"
+            android:layout_marginLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysetting_statistics"
+            android:text="Statistics"
+            android:layout_toRightOf="@+id/txt_mysetting_recruit" />
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_mysettingrecruiting"
+        android:layout_below="@+id/rl_mysettingrecruitingtab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/txt_mysettingrecru_heading"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FINANCIAL INFO"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="No. invited user:"
+            android:textSize="16sp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_inviteduser"
+            android:layout_below="@+id/txt_mysettingrecru_heading"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="0"
+            android:textSize="16sp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_inviteduservalue"
+            android:layout_alignTop="@+id/txt_mysett_inviteduser"
+            android:layout_alignLeft="@+id/txt_mysett_recruiteduservalue"
+            android:layout_alignStart="@+id/txt_mysett_recruiteduservalue" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="No. recruited users:"
+            android:textSize="16sp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_recruituser"
+            android:layout_below="@+id/txt_mysett_inviteduser"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="0"
+            android:textSize="16sp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_recruiteduservalue"
+            android:layout_above="@+id/txt_mysett_annualcomm"
+            android:layout_alignLeft="@+id/txt_mysett_annualcommvalue"
+            android:layout_alignStart="@+id/txt_mysett_annualcommvalue" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Annual commision:"
+            android:textSize="16sp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_annualcomm"
+            android:layout_below="@+id/txt_mysett_recruituser"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="0 USD"
+            android:textSize="16sp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_annualcommvalue"
+            android:layout_alignTop="@+id/txt_mysett_annualcomm"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="RECRUITED USERS"
+            android:textSize="16sp"
+            android:textColor="#F0836C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_recruiteduserheading"
+            android:layout_below="@+id/txt_mysett_annualcomm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Username"
+            android:textSize="16sp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_recruitedusername"
+            android:layout_below="@+id/txt_mysett_recruiteduserheading"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txt_mysett_recruiteduserheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_msettingrecruitleftarrow"
+            android:src="@drawable/bt_previous"
+            android:layout_toRightOf="@+id/txt_mysett_recruitedusername"
+            android:layout_alignBottom="@+id/txt_mysett_recruitaccept"
+            android:layout_alignRight="@+id/txt_mysett_inviteduser"
+            android:layout_alignEnd="@+id/txt_mysett_inviteduser" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Accepted"
+            android:textSize="16sp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_recruitaccept"
+            android:layout_toRightOf="@+id/img_msettingrecruitleftarrow"
+            android:layout_below="@+id/txt_mysett_recruiteduserheading" />
+
+        <TextView
+            android:text="Annual\ncommision"
+            android:textSize="16sp"
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysett_recruitannual"
+            android:layout_below="@+id/txt_mysett_recruiteduserheading"
+            android:layout_toRightOf="@+id/txt_mysett_annualcommvalue"
+            android:layout_toEndOf="@+id/txt_mysett_annualcommvalue"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_mysett_recruiteduserheading"
+            android:layout_toRightOf="@+id/txt_mysett_recruitannual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_msettingrecruitleftarrownext"
+            android:src="@drawable/bt_next_active"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

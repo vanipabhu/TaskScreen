@@ -51,13 +51,17 @@
         android:id="@+id/rl_opp_main_addproductgroup"
         android:layout_below="@+id/rl_opp_addproductgroup"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+   >
 
         <TextView
             android:textSize="18sp"
             android:textColor="#414141"
             android:text="Name:"
+            android:layout_marginLeft="5dp"
             android:layout_margin="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txt_opp_productgroup_name"/>
@@ -67,6 +71,9 @@
             android:textColorHint="#c4c4c4"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="required"
@@ -93,6 +100,8 @@
             android:textColor="#414141"
             android:text="Default sales process:"
             android:layout_margin="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txt_opp_productgroup_default"/>
@@ -103,7 +112,9 @@
             android:textColor="#6e6e6e"
             android:textColorHint="#c4c4c4"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="required"

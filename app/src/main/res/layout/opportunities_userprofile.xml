@@ -153,7 +153,7 @@
                         android:layout_centerHorizontal="true"
                         android:src="@drawable/icon_task_in_progress_big" />
 
-                    <com.taskscreen.activity.TextViewRegular
+                    <com.taskscreen.activity.Utilities.TextViewRegular
                         android:id="@+id/txt_oppuserprofile_tasks"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
                         android:layout_centerHorizontal="true"
                         android:src="@drawable/icon_meetings" />
 
-                    <com.taskscreen.activity.TextViewRegular
+                    <com.taskscreen.activity.Utilities.TextViewRegular
                         android:id="@+id/txt_oppuserprofile_appointment"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -294,7 +294,7 @@
                         android:layout_centerHorizontal="true"
                         android:src="@drawable/icon_document_doc" />
 
-                    <com.taskscreen.activity.TextViewSemiBold
+                    <com.taskscreen.activity.Utilities.TextViewSemiBold
                         android:id="@+id/txt_oppuserprofile_documents"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -427,7 +427,7 @@
                 android:layout_below="@+id/rl_underlayout"
                 android:layout_marginTop="5dp">
 
-                <com.taskscreen.activity.TextViewSemiBold
+                <com.taskscreen.activity.Utilities.TextViewSemiBold
                     android:id="@+id/txt_oppuserprof_workload"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

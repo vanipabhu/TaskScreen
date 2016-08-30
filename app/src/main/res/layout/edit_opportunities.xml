@@ -7,7 +7,7 @@
         android:background="#f0836c"
         android:id="@+id/rl_editopp"
         android:layout_width="match_parent"
-        android:layout_height="64dp">
+        android:layout_height="56dp">
 
         <TextView
             android:id="@+id/txt_editopp_cancel"

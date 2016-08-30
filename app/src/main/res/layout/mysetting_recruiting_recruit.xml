@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taskscreen.activity.MySettingRecruitingRecruit">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/rl_heading_recruitingrecruit"
+        >
+        <ImageView
+            android:backgroundTint="#fff"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menubar_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_navi_recruiting"/>
+
+
+        <TextView
+            android:id="@+id/txt_recruiting"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recruiting new users"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_mysettingrecruitingtab"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_heading_recruitingrecruit">
+        <LinearLayout
+
+            android:id="@+id/rl_mysetting_importtab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/headingrectangle_colorprimary_left"
+                android:id="@+id/txt_mysetting_recruitingbilling"
+                android:textColor="@color/colorPrimary"
+                android:text="Billing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/txt_mysetting_recruitingbilling"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:background="@drawable/drawable_rectangle_background_mainfull"
+                android:id="@+id/txt_mysetting_storageimport"
+                android:textColor="#fff"
+                android:text="Recruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="@drawable/headingrectangle_colorprimaryfull_right"
+                android:textSize="14sp"
+                android:layout_marginLeft="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_mysetting_storage"
+                android:text="Statistics"
+                android:layout_toRightOf="@+id/txt_mysetting_storageimport" />
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_mysettingrecruitingtab"
+        android:id="@+id/txt_recruitinglist"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recruitment list"
+        />
+
+    <TextView
+        android:background="@drawable/rectangle_colorprimary_curve"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_recruitinglist"
+        android:id="@+id/txt_recruitinglist_adduser"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add single user"
+        />
+
+
+    <TextView
+        android:background="@drawable/rectangle_colorprimary_curve"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txt_recruitinglist_adduser"
+        android:layout_below="@+id/txt_recruitinglist"
+        android:id="@+id/txt_recruitinglist_addmany"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add many users"
+        />
+
+    <TextView
+        android:background="@drawable/rectangle_colorprimary_curvefull"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txt_recruitinglist_addmany"
+        android:layout_below="@+id/txt_recruitinglist"
+        android:id="@+id/txt_recruitinglist_send"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginLeft="35dp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_recruiting1"
+        android:layout_below="@+id/txt_recruitinglist_adduser"
+        android:background="#d3d3d3"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_recruiting2"
+        android:layout_below="@+id/view_recruiting1"
+        android:background="#d3d3d3"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_recruiting3"
+        android:layout_below="@+id/view_recruiting2"
+        android:background="#d3d3d3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_recruiting4"
+        android:layout_below="@+id/view_recruiting3"
+        android:background="#d3d3d3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_recruiting5"
+        android:layout_below="@+id/view_recruiting4"
+        android:background="#d3d3d3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_recruiting6"
+        android:layout_below="@+id/view_recruiting5"
+        android:background="#d3d3d3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_recruiting7"
+        android:layout_below="@+id/view_recruiting6"
+        android:background="#d3d3d3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_recruiting8"
+        android:layout_below="@+id/view_recruiting7"
+        android:background="#d3d3d3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view_recruiting9"
+        android:layout_below="@+id/view_recruiting8"
+        android:background="#d3d3d3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>

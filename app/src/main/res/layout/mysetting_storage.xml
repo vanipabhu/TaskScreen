@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/rl_heading_storage"
+        >
+        <ImageView
+            android:backgroundTint="#fff"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menubar_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_navi_storage"/>
+
+
+        <TextView
+            android:id="@+id/txt_language"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storage"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/rl_heading_storage"
+        android:id="@+id/rl_mysetting_storagetab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/headingrectangle_colorprimary_left"
+            android:id="@+id/txt_mysetting_storageimport"
+            android:textColor="@color/colorPrimary"
+            android:text="Import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@drawable/headingrectangle_colorprimaryfull_right"
+            android:textSize="16sp"
+            android:layout_marginLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysetting_storage"
+            android:text="Storage"
+            android:layout_toRightOf="@+id/txt_mysetting_storageimport" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txt_mysetting_linkedaccount"
+        android:layout_below="@+id/rl_mysetting_storagetab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#414141"
+        android:textSize="22sp"
+        android:text="Linked accounts"/>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/txt_mysetting_linkedaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_mysettinggoogledrive"
+                android:src="@drawable/drive"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:textColor="#414141"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_mysettinggoogledrive"
+                android:text="Google drive"
+                android:layout_toRightOf="@+id/img_mysettinggoogledrive"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_mysettinggoogledrivelink"
+                android:text="Link to sync documents"
+                android:layout_below="@+id/txt_mysettinggoogledrive"
+                android:textColor="#6e6e6e"
+                android:layout_toRightOf="@+id/img_mysettinggoogledrive"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+            <TextView
+                android:textColor="#414141"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_mysettingdriveconnectedaccount"
+                android:text="Connected account"
+                android:layout_below="@+id/txt_mysettinggoogledrivelink"
+                android:layout_toRightOf="@+id/img_mysettinggoogledrive"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_mysettinggoogledrivelink"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textColor="#fff"
+                android:text="Link"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rectangle_pinkcurve"
+                android:layout_marginRight="10dp"/>
+
+            <View
+                android:id="@+id/googledriveview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_mysettingdriveconnectedaccount"
+                android:layout_margin="10dp"
+                android:background="#c4c4c4"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/img_mysettingdropbox"
+            android:src="@drawable/dropbox"
+            android:layout_below="@+id/googledriveview"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_dropboxtxt"
+            android:text="Dropbox"
+            android:layout_below="@+id/googledriveview"
+            android:layout_toRightOf="@+id/img_mysettingdropbox"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysettingdropboxlink"
+            android:text="Link to sync documents"
+            android:layout_toRightOf="@+id/img_mysettingdropbox"
+            android:textColor="#6e6e6e"
+            android:layout_below="@+id/txt_dropboxtxt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/connectedaccount2"
+            android:text="Connected account"
+            android:layout_below="@+id/txt_mysettingdropboxlink"
+            android:layout_toRightOf="@+id/img_mysettingdropbox"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_mysettingdropboxlink"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="#fff"
+            android:text="Link"
+            android:layout_below="@+id/googledriveview"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rectangle_pinkcurve"
+            android:layout_marginRight="10dp"/>
+        <View
+            android:id="@+id/view_mysettingdropbox"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/connectedaccount2"
+            android:layout_margin="10dp"
+            android:background="#c4c4c4"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/img_mysettingonedrive"
+            android:src="@drawable/cloud"
+            android:layout_below="@+id/view_mysettingdropbox"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_myseetingonedrive"
+            android:text="Onedrive"
+            android:layout_below="@+id/view_mysettingdropbox"
+            android:layout_toRightOf="@+id/img_mysettingonedrive"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysettingonedrivelink"
+            android:text="Link to sync documents"
+            android:layout_toRightOf="@+id/img_mysettingonedrive"
+            android:textColor="#6e6e6e"
+            android:layout_below="@+id/txt_myseetingonedrive"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:textColor="#414141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mysettingonedriveconnected"
+            android:text="Connected account"
+            android:layout_below="@+id/txt_mysettingonedrivelink"
+            android:layout_toRightOf="@+id/img_mysettingonedrive"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_mysettingonedrivelink"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="#fff"
+            android:text="Unlink"
+            android:layout_below="@+id/view_mysettingdropbox"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rectangle_peachcurve"
+            android:layout_marginRight="10dp"/>
+
+
+       <!--
+           -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

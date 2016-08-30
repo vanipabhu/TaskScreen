@@ -18,7 +18,7 @@ import com.taskscreen.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView task_save,task_cancel;
+    TextView task_save,task_cancel,txt_addopp;
     ImageView image_running;
 
     @Override
@@ -41,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentab=new Intent(getApplicationContext(),Task_MainScreen.class);
                 startActivity(intentab);
+            }
+        });
+
+        txt_addopp= (TextView) findViewById(R.id.txt_add_opp);
+        txt_addopp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MySettingPersonalInfo.class);
+                startActivity(intent);
             }
         });
        /* image_running= (ImageView) findViewById(R.id.image_running);

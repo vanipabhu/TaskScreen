@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taskscreen.activity.MySettingImport">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/rl_heading_import"
+        >
+        <ImageView
+            android:backgroundTint="#fff"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menubar_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_navi_import"/>
+
+
+        <TextView
+            android:id="@+id/txt_import"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Import"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/rl_heading_import"
+        android:id="@+id/rl_mysetting_importtab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/drawable_rectangle_background_mainfull"
+            android:id="@+id/txt_mysetting_import"
+            android:textColor="#fff"
+            android:text="Import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:background="@drawable/drawable_rectangle_background_main"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/txt_mysetting_importstorage"
+            android:text="Storage"
+            android:layout_toRightOf="@+id/txt_mysetting_import" />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_linked_acc"
+        android:text="Linked accounts"
+        android:layout_below="@+id/rl_mysetting_importtab"
+        android:textSize="20sp"
+        android:textColor="#414141"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/txt_linked_acc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_facebook">
+
+            <ImageView
+                android:id="@+id/img_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_facebook"
+                />
+            <TextView
+                android:id="@+id/txt_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_facebook"
+                android:text="Facebook"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#414141"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/txt_facebooklink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#6e6e6e"
+                android:textStyle="italic"
+                android:text="Link to search for a contact"
+                android:layout_below="@+id/txt_facebook"
+                android:layout_alignLeft="@+id/txt_facebook"
+                android:layout_alignStart="@+id/txt_facebook" />
+            <TextView
+                android:layout_toRightOf="@+id/img_facebook"
+                android:id="@+id/txt_facebook_connectedaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connected account:"
+                android:textSize="12sp"
+                android:textColor="#414141"
+                android:layout_below="@+id/txt_facebooklink"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                />
+
+                <Button
+                    android:id="@+id/btn_facelink"
+                    android:layout_width="300dp"
+                    android:textSize="12sp"
+                    android:layout_height="20dp"
+                    android:textColor="#fff"
+                    android:text="Link"
+                    android:layout_marginTop="30dp"
+                    android:textAllCaps="false"
+                    android:layout_toRightOf="@+id/txt_facebook"
+                    android:background="#e55354"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="10dp"/>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#d3d3d3"
+                android:layout_below="@+id/txt_facebook_connectedaccount"
+                android:id="@+id/view_facebook" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/rl_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+           <ImageView
+                  android:id="@+id/googleimg"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:src="@drawable/google"
+                  />
+              <TextView
+                  android:id="@+id/google"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/googleimg"
+                  android:text="Google"
+                  android:textStyle="bold"
+                  android:textSize="15sp"
+                  android:textColor="#414141"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="5dp"
+                  />
+              <TextView
+                  android:id="@+id/link"
+                  android:layout_width="200dp"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/googleimg"
+                  android:textSize="12sp"
+                  android:textColor="#6e6e6e"
+                  android:textStyle="italic"
+                  android:text="Link to sync contacts,tasks,appointments"
+                  android:layout_below="@+id/google"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="5dp"
+                  />
+              <TextView
+                  android:id="@+id/connectedaccount"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Connected account:"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/link"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedcontacts"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Synced contacts"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/connectedaccount"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedcontactsnmbr"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_toRightOf="@+id/syncedcontacts"
+                  android:layout_below="@+id/connectedaccount"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="35dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedappointments"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Synced appointments"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/syncedcontacts"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedappointmentsnmbr"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_alignBaseline="@+id/syncedappointments"
+                  android:layout_alignBottom="@+id/syncedappointments"
+                  android:layout_alignLeft="@+id/syncedcontactsnmbr"
+                  android:layout_alignStart="@+id/syncedcontactsnmbr" />
+              <TextView
+                  android:id="@+id/syncedtasks"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Synced tasks"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/syncedappointments"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedtasksnmbr"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_toRightOf="@+id/syncedappointments"
+                  android:layout_below="@+id/syncedappointmentsnmbr"
+                  android:layout_marginLeft="9dp"
+                  />
+              <Button
+                  android:id="@+id/btn_googlelink"
+                  android:layout_width="match_parent"
+                  android:textSize="12sp"
+                  android:layout_height="20dp"
+                  android:textColor="#fff"
+                  android:text="Unlink"
+                  android:layout_marginTop="15dp"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:background="@drawable/rectangle_peachcurve"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"/>
+              <Button
+                  android:id="@+id/syncontactbtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:textColor="#fff"
+                  android:textSize="12sp"
+                  android:text="Sync contacts"
+                  android:layout_marginTop="5dp"
+                  android:layout_below="@+id/btn_googlelink"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"
+                  android:background="@drawable/rectangle_peachcurve"
+                  />
+              <Button
+                  android:id="@+id/syncalendarbtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:textColor="#fff"
+                  android:text="Sync calendar"
+                  android:textSize="12sp"
+                  android:layout_marginTop="5dp"
+                  android:layout_below="@+id/syncontactbtn"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"
+                  android:background="@drawable/rectangle_peachcurve"
+                  />
+              <Button
+                  android:id="@+id/synctasksbtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:textColor="#fff"
+                  android:text="Sync tasks"
+                  android:layout_marginTop="5dp"
+                  android:layout_below="@+id/syncalendarbtn"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"
+                  android:background="#4788c8"
+                  android:textSize="12sp"
+                  />
+              <View
+                  android:id="@+id/view1"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="#d3d3d3"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_below="@+id/syncedtasks"
+                  android:layout_marginTop="5dp"/>
+              <ImageView
+                  android:id="@+id/outlookimg"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_below="@+id/view1"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:src="@drawable/outlook"
+                  />
+              <TextView
+                  android:id="@+id/outlook"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/googleimg"
+                  android:text="Outlook"
+                  android:textStyle="bold"
+                  android:textSize="15sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/view1"
+                  android:layout_marginTop="12dp"
+                  android:layout_marginLeft="5dp"
+                  />
+              <TextView
+                  android:id="@+id/linkoutlook"
+                  android:layout_width="200dp"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/outlookimg"
+                  android:textSize="12sp"
+                  android:textStyle="italic"
+                  android:textColor="#6e6e6e"
+                  android:text="Link to sync contacts,tasks,appointments"
+                  android:layout_below="@+id/outlook"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="5dp"
+
+                  />
+              <TextView
+                  android:id="@+id/connectedaccountoutlook"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Connected account:"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/linkoutlook"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedcontactsoutlook"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Synced contacts"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/connectedaccountoutlook"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedcontactsnmbroutlook"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_alignBaseline="@+id/syncedcontactsoutlook"
+                  android:layout_alignBottom="@+id/syncedcontactsoutlook"
+                  android:layout_alignLeft="@+id/syncedappointmentsnmbr"
+                  android:layout_alignStart="@+id/syncedappointmentsnmbr" />
+              <TextView
+                  android:id="@+id/syncedappointmentsoutlook"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Synced appointments"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/syncedcontactsoutlook"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedappointmentsnmbroutlook"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_alignBaseline="@+id/syncedappointmentsoutlook"
+                  android:layout_alignBottom="@+id/syncedappointmentsoutlook"
+                  android:layout_alignLeft="@+id/syncedcontactsnmbroutlook"
+                  android:layout_alignStart="@+id/syncedcontactsnmbroutlook" />
+
+              <Button
+                  android:id="@+id/linkbtnout"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:textColor="#fff"
+                  android:text="Link"
+                  android:textSize="12sp"
+                  android:layout_marginTop="15dp"
+                  android:layout_below="@+id/view1"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"
+                  android:background="#e55354"
+                  />
+              <Button
+                  android:id="@+id/syncontactbtnout"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:textColor="#fff"
+                  android:textSize="12sp"
+                  android:text="Sync contacts"
+                  android:layout_marginTop="5dp"
+                  android:layout_below="@+id/linkbtnout"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"
+                  android:background="#4788c8"
+                  />
+              <Button
+                  android:id="@+id/syncalendarbtnout"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:textSize="12sp"
+                  android:textColor="#fff"
+                  android:text="Sync calendar"
+                  android:layout_marginTop="5dp"
+                  android:layout_below="@+id/syncontactbtnout"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"
+                  android:background="#4788c8"
+                  />
+
+              <View
+                  android:id="@+id/view2"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="#d3d3d3"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_below="@+id/syncedappointmentsoutlook"
+                  android:layout_marginTop="5dp"/>
+              <ImageView
+                  android:id="@+id/officeimg"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_below="@+id/view2"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:src="@drawable/office"
+                  />
+              <TextView
+                  android:id="@+id/office"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/googleimg"
+                  android:text="Office"
+                  android:textSize="15sp"
+                  android:textStyle="bold"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/view2"
+                  android:layout_marginTop="12dp"
+                  android:layout_marginLeft="5dp"
+                  />
+              <TextView
+                  android:id="@+id/linkoffice"
+                  android:layout_width="200dp"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/officeimg"
+                  android:textSize="12sp"
+                  android:textStyle="italic"
+                  android:textColor="#6e6e6e"
+                  android:text="Link to sync contacts,tasks,appointments"
+                  android:layout_below="@+id/office"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="5dp"
+                  />
+              <TextView
+                  android:id="@+id/connectedaccountoffice"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Connected account:"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/linkoffice"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedcontactsoffice"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Synced contacts"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/connectedaccountoffice"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedcontactsnmbroffice"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_toRightOf="@+id/syncedcontactsoffice"
+                  android:layout_below="@+id/connectedaccountoffice"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="28dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedappointmentsoffice"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Synced appointments"
+                  android:textSize="12sp"
+                  android:textColor="#6e6e6e"
+                  android:layout_below="@+id/syncedcontactsoffice"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:id="@+id/syncedappointmentsnmbroffice"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:textSize="12sp"
+                  android:textColor="#6e6e6e"
+                  android:layout_toRightOf="@+id/syncedappointmentsoffice"
+                  android:layout_below="@+id/syncedcontactsnmbroffice"
+                  android:layout_marginLeft="2dp"
+                  />
+
+              <Button
+                  android:id="@+id/linkbtnoffice"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:textColor="#fff"
+                  android:text="Link"
+                  android:textSize="12sp"
+                  android:layout_marginTop="15dp"
+                  android:layout_below="@+id/view2"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"
+                  android:background="#e55354"
+                  />
+              <Button
+                  android:id="@+id/syncontactbtnoffice"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:textSize="12sp"
+                  android:textColor="#fff"
+                  android:text="Sync contacts"
+                  android:layout_marginTop="5dp"
+                  android:layout_below="@+id/linkbtnoffice"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"
+                  android:background="#4788c8"
+                  />
+              <Button
+                  android:id="@+id/syncalendarbtnoffice"
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:textSize="12sp"
+                  android:textColor="#fff"
+                  android:text="Sync calendar"
+                  android:layout_marginTop="5dp"
+                  android:layout_below="@+id/syncontactbtnoffice"
+                  android:textAllCaps="false"
+                  android:layout_toRightOf="@+id/google"
+                  android:layout_marginLeft="120dp"
+                  android:layout_marginRight="10dp"
+                  android:background="#4788c8"
+                  />
+
+              <View
+                  android:id="@+id/view3"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="#d3d3d3"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_below="@+id/syncedappointmentsoffice"
+                  android:layout_marginTop="5dp"/>
+
+
+            <!--  <ImageView
+                  android:id="@+id/img_linked"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_below="@+id/view3"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:src="@drawable/linkedin"
+                  />
+              <TextView
+                  android:id="@+id/txt_linkedin"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/img_linked"
+                  android:text="Facebook"
+                  android:textStyle="bold"
+                  android:textSize="12sp"
+                  android:textColor="#414141"
+                  android:layout_below="@+id/view3"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  />
+              <TextView
+                  android:layout_below="@+id/txt_linkedin"
+                  android:id="@+id/txt_linkedinlink"
+                  android:layout_width="200dp"
+                  android:layout_height="wrap_content"
+                  android:textSize="12sp"
+                  android:textColor="#6e6e6e"
+                  android:textStyle="italic"
+                  android:layout_marginLeft="10dp"
+                  android:text="Link to search for a contact"
+                  android:layout_toRightOf="@+id/img_linked" />
+              <TextView
+                  android:layout_toRightOf="@+id/img_linked"
+                  android:id="@+id/txt_linked_connectedaccount"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Connected account:"
+                  android:textSize="14sp"
+                  android:textColor="#6e6e6e"
+                  android:layout_below="@+id/txt_linkedinlink"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  />
+
+              <Button
+                  android:id="@+id/linkedinbtn"
+                  android:layout_width="wrap_content"
+                  android:textSize="16sp"
+                  android:layout_height="wrap_content"
+                  android:textColor="#fff"
+                  android:text="Link"
+                  android:textAllCaps="false"
+                  android:background="#b4cd55"
+                  android:layout_above="@+id/txt_linkedinlink"
+                  android:layout_alignRight="@+id/view3"
+                  android:layout_alignEnd="@+id/view3"
+                  android:layout_alignTop="@+id/txt_linkedin" />-->
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
