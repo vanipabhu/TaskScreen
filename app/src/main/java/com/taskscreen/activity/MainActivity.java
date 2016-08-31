@@ -30,19 +30,12 @@ public class MainActivity extends AppCompatActivity {
         task_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),Edit_Task_Activity.class);
+                Intent intent=new Intent(getApplicationContext(),EditOpportunities.class);
                 startActivity(intent);
             }
         });
 
-        task_cancel= (TextView) findViewById(R.id.txt_add_opp_cancel);
-        task_cancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentab=new Intent(getApplicationContext(),Task_MainScreen.class);
-                startActivity(intentab);
-            }
-        });
+
 
         txt_addopp= (TextView) findViewById(R.id.txt_add_opp);
         txt_addopp.setOnClickListener(new View.OnClickListener() {
@@ -52,30 +45,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-       /* image_running= (ImageView) findViewById(R.id.image_running);
-        image_running.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intenti=new Intent(getApplicationContext(),DelegationLeadsActivity.class);
-                startActivity(intenti);
-            }
-        });*/
 
         Window window = MainActivity.this.getWindow();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(MainActivity.this.getResources().getColor(R.color.statuscode));
+            window.setStatusBarColor(MainActivity.this.getResources().getColor(R.color.peach_opportunities));
         }
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               Intent intent=new Intent(getApplicationContext(),Orderby_task.class);
-                startActivity(intent);
-            }
-        });
+
 
 
     }

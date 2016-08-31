@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -22,6 +23,9 @@ public class OpportunitiesMainActivity extends AppCompatActivity {
     Typeface mfontLightTypeFace,mfontRegularTypeFace,mfontSemiBoldTypeFace;
     TextView mTvOppHeading, mTvOppPearsonName,mTvOppMessage,mTvOppYearNum,mTvOppYear;
     RelativeLayout mRlBottomBarDetails;
+    RelativeLayout mRlCard;
+    ImageView imgrun;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +36,22 @@ public class OpportunitiesMainActivity extends AppCompatActivity {
         mTvOppMessage= (TextView) findViewById(R.id.txt_opportunities_message);
         mTvOppYearNum= (TextView) findViewById(R.id.txt_opportunities_yearnum);
         mTvOppYear= (TextView) findViewById(R.id.txt_opportunities_yaer);
+        mRlCard= (RelativeLayout) findViewById(R.id.rl_carditems);
+      /*  mRlCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });*/
+
+        imgrun= (ImageView) findViewById(R.id.image_running_opportunities);
+        imgrun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),OpportunitiesUserProfile.class);
+                startActivity(intent);
+            }
+        });
 
         mRlBottomBarDetails= (RelativeLayout) findViewById(R.id.rl_opp_bottomdetails);
         mRlBottomBarDetails.setOnClickListener(new View.OnClickListener() {
@@ -39,8 +59,8 @@ public class OpportunitiesMainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 mRlBottomBarDetails.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.peach_opportunities));
-                Intent intent=new Intent(getApplicationContext(),OpportunitiesUserProfile.class);
-                startActivity(intent);
+
+
             }
         });
 

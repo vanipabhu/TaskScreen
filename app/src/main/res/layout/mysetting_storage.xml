@@ -11,8 +11,6 @@
         >
         <ImageView
             android:backgroundTint="#fff"
-            android:paddingTop="18dp"
-            android:paddingBottom="18dp"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
             android:src="@drawable/menubar_dark"
@@ -111,6 +109,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="15sp"/>
             <TextView
+                android:textStyle="italic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_mysettinggoogledrivelink"
@@ -132,10 +131,11 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:textSize="15sp"/>
-            <Button
+            <TextView
+                android:gravity="center"
                 android:layout_marginTop="10dp"
                 android:id="@+id/btn_mysettinggoogledrivelink"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="25dp"
                 android:textColor="#fff"
                 android:text="Link"
@@ -172,6 +172,7 @@
             android:layout_marginTop="10dp"
             android:textSize="15sp"/>
         <TextView
+            android:textStyle="italic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txt_mysettingdropboxlink"
@@ -193,10 +194,11 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:textSize="15sp"/>
-        <Button
+        <TextView
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:id="@+id/btn_mysettingdropboxlink"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="25dp"
             android:textColor="#fff"
             android:text="Link"
@@ -233,6 +235,8 @@
             android:layout_marginTop="10dp"
             android:textSize="15sp"/>
         <TextView
+            android:textStyle="italic"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txt_mysettingonedrivelink"
@@ -254,10 +258,11 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:textSize="15sp"/>
-        <Button
+        <TextView
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:id="@+id/btn_mysettingonedrivelink"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="25dp"
             android:textColor="#fff"
             android:text="Unlink"

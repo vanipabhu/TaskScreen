@@ -67,7 +67,7 @@ public class DelegationTasksActivity extends AppCompatActivity{
         mIVDelegationFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),EditOpportunities.class);
+                Intent intent=new Intent(getApplicationContext(),MySettingPersonalInfo.class);
                 startActivity(intent);
             }
         });

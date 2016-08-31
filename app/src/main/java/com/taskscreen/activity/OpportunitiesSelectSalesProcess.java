@@ -1,10 +1,12 @@
 
 package com.taskscreen.activity;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -35,6 +37,14 @@ public class OpportunitiesSelectSalesProcess extends AppCompatActivity {
 
         mTVSelectSalesPro= (TextView) findViewById(R.id.txt_opp_selectsalesprocess_heading);
         mTVSelectSalesPro.setTypeface(mfontSemiBoldTypeFace);
+        mTVSelectSalesPro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),OpportunitiesAddOrderRow.class);
+                startActivity(intent);
+            }
+        });
+
         mTVSelectSaleshu= (TextView) findViewById(R.id.txt_opp_selectsalesprocess_name);
         mTVSelectSaleshu.setTypeface(mfontRegularTypeFace);
         mTVSelectSalesNew= (TextView) findViewById(R.id.txt_opp_selectsalesprocess_newprocess);

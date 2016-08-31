@@ -10,8 +10,6 @@
         >
         <ImageView
             android:backgroundTint="#fff"
-            android:paddingTop="18dp"
-            android:paddingBottom="18dp"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
             android:src="@drawable/menubar_dark"
@@ -57,7 +55,7 @@
             android:gravity="center"
             android:textSize="16sp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/drawable_rectangle_background_main"
+            android:background="@drawable/headingrectangle_colorprimary_left"
             android:id="@+id/txt_mysetting_recruitingbilling"
             android:textColor="@color/colorPrimary"
             android:text="Billing"
@@ -71,7 +69,7 @@
             android:layout_toRightOf="@+id/txt_mysetting_recruitingbilling"
             android:gravity="center"
             android:textSize="16sp"
-            android:background="@drawable/drawable_rectangle_background_main"
+            android:background="@drawable/headingrectangle_colorprimaryfull_middle"
             android:id="@+id/txt_mysetting_recruit"
             android:textColor="@color/colorPrimary"
             android:text="Recruit"
@@ -84,7 +82,7 @@
             android:layout_marginBottom="10dp"
             android:textColor="#fff"
             android:gravity="center"
-            android:background="@drawable/drawable_rectangle_background_mainfull"
+            android:background="@drawable/headingrectangle_colorprimaryfull_right"
             android:textSize="16sp"
             android:layout_marginLeft="0dp"
             android:layout_width="wrap_content"
@@ -222,9 +220,7 @@
             android:id="@+id/img_msettingrecruitleftarrow"
             android:src="@drawable/bt_previous"
             android:layout_toRightOf="@+id/txt_mysett_recruitedusername"
-            android:layout_alignBottom="@+id/txt_mysett_recruitaccept"
-            android:layout_alignRight="@+id/txt_mysett_inviteduser"
-            android:layout_alignEnd="@+id/txt_mysett_inviteduser" />
+            />
 
         <TextView
             android:layout_marginLeft="10dp"

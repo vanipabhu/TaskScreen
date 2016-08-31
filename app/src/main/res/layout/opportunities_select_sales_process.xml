@@ -46,6 +46,8 @@
         android:textColor="#414141"
         android:text="huhu"
         android:layout_margin="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt_opp_selectsalesprocess_name"/>
@@ -63,6 +65,8 @@
         android:layout_below="@+id/txt_opp_selectsalesprocess_name"/>
 
     <TextView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
         android:layout_below="@+id/view_opp_selectsalesprocess_name"
         android:textSize="18sp"
         android:textColor="#414141"
@@ -85,6 +89,8 @@
          android:layout_below="@+id/txt_opp_selectsalesprocess_newprocess"/>
 
     <TextView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
         android:layout_below="@+id/view_opp_selectsalesprocess_default"
         android:textSize="18sp"
         android:textColor="#414141"
@@ -107,6 +113,8 @@
         android:layout_below="@+id/txt_opp_selectsalesprocess_register"/>
 
     <TextView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
         android:layout_below="@+id/view_opp_selectsalesprocess_register"
         android:textSize="18sp"
         android:textColor="#414141"
@@ -129,6 +137,8 @@
         android:layout_below="@+id/txt_opp_selectsalesprocess_bysalesbox"/>
 
     <TextView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
         android:layout_below="@+id/view_opp_selectsalesprocess_bysalesbox"
         android:textSize="18sp"
         android:textColor="#414141"

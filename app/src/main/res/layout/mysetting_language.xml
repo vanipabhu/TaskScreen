@@ -13,8 +13,6 @@
         >
         <ImageView
             android:backgroundTint="#fff"
-            android:paddingTop="18dp"
-            android:paddingBottom="18dp"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
             android:src="@drawable/menubar_dark"

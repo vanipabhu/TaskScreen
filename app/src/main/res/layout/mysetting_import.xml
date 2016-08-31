@@ -13,8 +13,6 @@
         >
         <ImageView
             android:backgroundTint="#fff"
-            android:paddingTop="18dp"
-            android:paddingBottom="18dp"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
             android:src="@drawable/menubar_dark"
@@ -50,7 +48,7 @@
         <TextView
             android:gravity="center"
             android:textSize="16sp"
-            android:background="@drawable/drawable_rectangle_background_mainfull"
+            android:background="@drawable/headingrectangle_colorprimaryfull_left"
             android:id="@+id/txt_mysetting_import"
             android:textColor="#fff"
             android:text="Import"
@@ -59,11 +57,10 @@
 
         <TextView
             android:textColor="@color/colorPrimary"
-            android:gravity="center"
-            android:background="@drawable/drawable_rectangle_background_main"
+            android:background="@drawable/headingrectangle_colorprimary_right"
             android:textSize="16sp"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:id="@+id/txt_mysetting_importstorage"
             android:text="Storage"
             android:layout_toRightOf="@+id/txt_mysetting_import" />
@@ -79,7 +76,7 @@
         android:id="@+id/txt_linked_acc"
         android:text="Linked accounts"
         android:layout_below="@+id/rl_mysetting_importtab"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textColor="#414141"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"/>
@@ -131,21 +128,21 @@
                 android:layout_alignLeft="@+id/txt_facebook"
                 android:layout_alignStart="@+id/txt_facebook" />
             <TextView
-                android:layout_toRightOf="@+id/img_facebook"
+                android:layout_marginTop="10dp"
                 android:id="@+id/txt_facebook_connectedaccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Connected account:"
                 android:textSize="12sp"
                 android:textColor="#414141"
-                android:layout_below="@+id/txt_facebooklink"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
-                />
+                android:layout_below="@+id/img_facebook"
+                android:layout_alignLeft="@+id/img_facebook"
+                android:layout_alignStart="@+id/img_facebook" />
 
-                <Button
+                <TextView
+                    android:gravity="center"
                     android:id="@+id/btn_facelink"
-                    android:layout_width="300dp"
+                    android:layout_width="200dp"
                     android:textSize="12sp"
                     android:layout_height="20dp"
                     android:textColor="#fff"
@@ -153,7 +150,7 @@
                     android:layout_marginTop="30dp"
                     android:textAllCaps="false"
                     android:layout_toRightOf="@+id/txt_facebook"
-                    android:background="#e55354"
+                    android:background="@drawable/rectangle_redcurve"
                     android:layout_marginLeft="100dp"
                     android:layout_marginRight="10dp"/>
 
@@ -179,7 +176,7 @@
                   android:id="@+id/googleimg"
                   android:layout_width="50dp"
                   android:layout_height="50dp"
-                  android:layout_marginTop="10dp"
+                  android:layout_marginTop="20dp"
                   android:layout_marginLeft="10dp"
                   android:src="@drawable/google"
                   />
@@ -192,8 +189,8 @@
                   android:textStyle="bold"
                   android:textSize="15sp"
                   android:textColor="#414141"
-                  android:layout_marginTop="10dp"
-                  android:layout_marginLeft="5dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="10dp"
                   />
               <TextView
                   android:id="@+id/link"
@@ -206,7 +203,7 @@
                   android:text="Link to sync contacts,tasks,appointments"
                   android:layout_below="@+id/google"
                   android:layout_marginTop="5dp"
-                  android:layout_marginLeft="5dp"
+                  android:layout_marginLeft="10dp"
                   />
               <TextView
                   android:id="@+id/connectedaccount"
@@ -227,7 +224,7 @@
                   android:textSize="12sp"
                   android:textColor="#414141"
                   android:layout_below="@+id/connectedaccount"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="10dp"
                   android:layout_marginLeft="10dp"
                   />
               <TextView
@@ -239,7 +236,7 @@
                   android:textColor="#414141"
                   android:layout_toRightOf="@+id/syncedcontacts"
                   android:layout_below="@+id/connectedaccount"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="10dp"
                   android:layout_marginLeft="35dp"
                   />
               <TextView
@@ -264,6 +261,7 @@
                   android:layout_alignLeft="@+id/syncedcontactsnmbr"
                   android:layout_alignStart="@+id/syncedcontactsnmbr" />
               <TextView
+                  android:layout_marginBottom="5dp"
                   android:id="@+id/syncedtasks"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
@@ -274,6 +272,7 @@
                   android:layout_marginLeft="10dp"
                   />
               <TextView
+                  android:layout_marginBottom="5dp"
                   android:id="@+id/syncedtasksnmbr"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
@@ -284,20 +283,22 @@
                   android:layout_below="@+id/syncedappointmentsnmbr"
                   android:layout_marginLeft="9dp"
                   />
-              <Button
+              <TextView
+                 android:gravity="center"
                   android:id="@+id/btn_googlelink"
                   android:layout_width="match_parent"
                   android:textSize="12sp"
                   android:layout_height="20dp"
                   android:textColor="#fff"
                   android:text="Unlink"
-                  android:layout_marginTop="15dp"
+                  android:layout_marginTop="20dp"
                   android:textAllCaps="false"
                   android:layout_toRightOf="@+id/google"
-                  android:background="@drawable/rectangle_peachcurve"
+                  android:background="@drawable/rectangle_greencurve"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"/>
-              <Button
+              <TextView
+                  android:gravity="center"
                   android:id="@+id/syncontactbtn"
                   android:layout_width="match_parent"
                   android:layout_height="20dp"
@@ -310,9 +311,10 @@
                   android:layout_toRightOf="@+id/google"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"
-                  android:background="@drawable/rectangle_peachcurve"
+                  android:background="@drawable/rectangle_bluecurve"
                   />
-              <Button
+              <TextView
+                  android:gravity="center"
                   android:id="@+id/syncalendarbtn"
                   android:layout_width="match_parent"
                   android:layout_height="20dp"
@@ -325,9 +327,10 @@
                   android:layout_toRightOf="@+id/google"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"
-                  android:background="@drawable/rectangle_peachcurve"
+                  android:background="@drawable/rectangle_bluecurve"
                   />
-              <Button
+              <TextView
+                  android:gravity="center"
                   android:id="@+id/synctasksbtn"
                   android:layout_width="match_parent"
                   android:layout_height="20dp"
@@ -339,7 +342,7 @@
                   android:layout_toRightOf="@+id/google"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"
-                  android:background="#4788c8"
+                  android:background="@drawable/rectangle_bluecurve"
                   android:textSize="12sp"
                   />
               <View
@@ -356,7 +359,7 @@
                   android:layout_width="50dp"
                   android:layout_height="50dp"
                   android:layout_below="@+id/view1"
-                  android:layout_marginTop="10dp"
+                  android:layout_marginTop="20dp"
                   android:layout_marginLeft="10dp"
                   android:src="@drawable/outlook"
                   />
@@ -370,8 +373,8 @@
                   android:textSize="15sp"
                   android:textColor="#414141"
                   android:layout_below="@+id/view1"
-                  android:layout_marginTop="12dp"
-                  android:layout_marginLeft="5dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="10dp"
                   />
               <TextView
                   android:id="@+id/linkoutlook"
@@ -384,7 +387,7 @@
                   android:text="Link to sync contacts,tasks,appointments"
                   android:layout_below="@+id/outlook"
                   android:layout_marginTop="5dp"
-                  android:layout_marginLeft="5dp"
+                  android:layout_marginLeft="10dp"
 
                   />
               <TextView
@@ -406,10 +409,11 @@
                   android:textSize="12sp"
                   android:textColor="#414141"
                   android:layout_below="@+id/connectedaccountoutlook"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="10dp"
                   android:layout_marginLeft="10dp"
                   />
               <TextView
+                  android:layout_marginTop="10dp"
                   android:id="@+id/syncedcontactsnmbroutlook"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
@@ -429,8 +433,10 @@
                   android:textColor="#414141"
                   android:layout_below="@+id/syncedcontactsoutlook"
                   android:layout_marginLeft="10dp"
+                  android:layout_marginBottom="5dp"
                   />
               <TextView
+                  android:layout_marginBottom="5dp"
                   android:id="@+id/syncedappointmentsnmbroutlook"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
@@ -442,22 +448,24 @@
                   android:layout_alignLeft="@+id/syncedcontactsnmbroutlook"
                   android:layout_alignStart="@+id/syncedcontactsnmbroutlook" />
 
-              <Button
+              <TextView
+                  android:gravity="center"
                   android:id="@+id/linkbtnout"
                   android:layout_width="match_parent"
                   android:layout_height="20dp"
                   android:textColor="#fff"
                   android:text="Link"
                   android:textSize="12sp"
-                  android:layout_marginTop="15dp"
+                  android:layout_marginTop="20dp"
                   android:layout_below="@+id/view1"
                   android:textAllCaps="false"
                   android:layout_toRightOf="@+id/google"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"
-                  android:background="#e55354"
+                  android:background="@drawable/rectangle_redcurve"
                   />
-              <Button
+              <TextView
+                  android:gravity="center"
                   android:id="@+id/syncontactbtnout"
                   android:layout_width="match_parent"
                   android:layout_height="20dp"
@@ -470,9 +478,10 @@
                   android:layout_toRightOf="@+id/google"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"
-                  android:background="#4788c8"
+                  android:background="@drawable/rectangle_bluecurve"
                   />
-              <Button
+              <TextView
+                  android:gravity="center"
                   android:id="@+id/syncalendarbtnout"
                   android:layout_width="match_parent"
                   android:layout_height="20dp"
@@ -485,7 +494,7 @@
                   android:layout_toRightOf="@+id/google"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"
-                  android:background="#4788c8"
+                  android:background="@drawable/rectangle_bluecurve"
                   />
 
               <View
@@ -502,7 +511,7 @@
                   android:layout_width="50dp"
                   android:layout_height="50dp"
                   android:layout_below="@+id/view2"
-                  android:layout_marginTop="10dp"
+                  android:layout_marginTop="20dp"
                   android:layout_marginLeft="10dp"
                   android:src="@drawable/office"
                   />
@@ -516,8 +525,8 @@
                   android:textStyle="bold"
                   android:textColor="#414141"
                   android:layout_below="@+id/view2"
-                  android:layout_marginTop="12dp"
-                  android:layout_marginLeft="5dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="10dp"
                   />
               <TextView
                   android:id="@+id/linkoffice"
@@ -530,7 +539,7 @@
                   android:text="Link to sync contacts,tasks,appointments"
                   android:layout_below="@+id/office"
                   android:layout_marginTop="5dp"
-                  android:layout_marginLeft="5dp"
+                  android:layout_marginLeft="10dp"
                   />
               <TextView
                   android:id="@+id/connectedaccountoffice"
@@ -551,7 +560,7 @@
                   android:textSize="12sp"
                   android:textColor="#414141"
                   android:layout_below="@+id/connectedaccountoffice"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="10dp"
                   android:layout_marginLeft="10dp"
                   />
               <TextView
@@ -563,7 +572,7 @@
                   android:textColor="#414141"
                   android:layout_toRightOf="@+id/syncedcontactsoffice"
                   android:layout_below="@+id/connectedaccountoffice"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="10dp"
                   android:layout_marginLeft="28dp"
                   />
               <TextView
@@ -572,7 +581,7 @@
                   android:layout_height="wrap_content"
                   android:text="Synced appointments"
                   android:textSize="12sp"
-                  android:textColor="#6e6e6e"
+                  android:textColor="#414141"
                   android:layout_below="@+id/syncedcontactsoffice"
                   android:layout_marginLeft="10dp"
                   />
@@ -582,13 +591,14 @@
                   android:layout_height="wrap_content"
                   android:text="0"
                   android:textSize="12sp"
-                  android:textColor="#6e6e6e"
+                  android:textColor="#414141"
                   android:layout_toRightOf="@+id/syncedappointmentsoffice"
                   android:layout_below="@+id/syncedcontactsnmbroffice"
                   android:layout_marginLeft="2dp"
                   />
 
-              <Button
+              <TextView
+                  android:gravity="center"
                   android:id="@+id/linkbtnoffice"
                   android:layout_width="match_parent"
                   android:layout_height="20dp"
@@ -601,9 +611,10 @@
                   android:layout_toRightOf="@+id/google"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"
-                  android:background="#e55354"
+                  android:background="@drawable/rectangle_redcurve"
                   />
-              <Button
+              <TextView
+                  android:gravity="center"
                   android:id="@+id/syncontactbtnoffice"
                   android:layout_width="match_parent"
                   android:layout_height="20dp"
@@ -616,9 +627,10 @@
                   android:layout_toRightOf="@+id/google"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"
-                  android:background="#4788c8"
+                  android:background="@drawable/rectangle_bluecurve"
                   />
-              <Button
+              <TextView
+                  android:gravity="center"
                   android:id="@+id/syncalendarbtnoffice"
                   android:layout_width="match_parent"
                   android:layout_height="20dp"
@@ -631,7 +643,7 @@
                   android:layout_toRightOf="@+id/google"
                   android:layout_marginLeft="120dp"
                   android:layout_marginRight="10dp"
-                  android:background="#4788c8"
+                  android:background="@drawable/rectangle_bluecurve"
                   />
 
               <View

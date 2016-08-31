@@ -9,22 +9,47 @@
     tools:showIn="@layout/activity_main">
 
     <RelativeLayout
-        android:background="#f8bd6f"
+        android:background="#f0836c"
         android:id="@+id/rl_add_opportunity"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="56dp">
 
         <TextView
-            android:id="@+id/txt_add_opp"
-            android:layout_marginStart="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:id="@+id/txt_add_opp_cancel"
             android:textSize="20sp"
-            android:layout_marginLeft="5dp"
             android:textColor="#fff"
-            android:textStyle="bold"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_add_opp"
+            android:textSize="22sp"
+            android:textColor="#fff"
             android:text="Add Opportunity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:id="@+id/txt_add_opp_done"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -34,26 +59,34 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:layout_margin="10dp"
+
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_account"
             android:layout_marginBottom="1dp">
 
             <TextView
-                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_account_name"
                 android:text="Account:"
-                android:textSize="15sp"
+
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_dropdown_big"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
@@ -71,18 +104,23 @@
         <RelativeLayout
             android:layout_below="@+id/rl_account"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_contact_opp"
-            android:layout_margin="10dp"
+
             android:layout_marginBottom="1dp">
 
             <TextView
-                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_contacts_opp"
                 android:text="Contacts:"
-                android:textSize="15dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -94,10 +132,14 @@
                 android:layout_centerVertical="true">
 
                 <EditText
-                    android:textSize="15sp"
+                    android:layout_marginLeft="3dp"
+                    android:cursorVisible="false"
+                    android:textColorHint="#c4c4c4"
+                    android:textSize="18sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:layout_centerVertical="true"
                     android:hint="required"
-                    android:layout_marginLeft="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/edit_contacts_opp"
@@ -105,15 +147,16 @@
                     />
 
                 <ImageView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_dropdown_big"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:id="@+id/image_contact_opp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginRight="13dp"
-                    android:layout_marginEnd="13dp" />
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp" />
 
             </RelativeLayout>
 
@@ -130,30 +173,36 @@
         <RelativeLayout
             android:layout_below="@+id/rl_contact_opp"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_opp_team"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+            >
 
             <TextView
-                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_opp_team"
                 android:text="Opportunity Team:"
-                android:textSize="15sp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <RelativeLayout
-                android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@+id/txt_opp_team"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true">
                 <EditText
-                    android:textSize="15sp"
+                    android:layout_marginLeft="3dp"
+                    android:cursorVisible="false"
+                    android:textColorHint="#c4c4c4"
+                    android:textSize="18sp"
                     android:hint="required"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -164,15 +213,15 @@
                     android:layout_alignParentStart="true" />
 
                 <ImageView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_dropdown_big"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:id="@+id/image_opp_team"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginRight="13dp"
-                    android:layout_marginEnd="13dp" />
+                   android:layout_marginRight="10dp" />
 
             </RelativeLayout>
 
@@ -189,23 +238,29 @@
         <RelativeLayout
             android:layout_below="@+id/rl_opp_team"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_description_opp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+           >
 
             <TextView
-                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_description_opp"
                 android:text="Description:"
-                android:textSize="15sp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <EditText
+                android:layout_marginRight="10dp"
+                android:cursorVisible="false"
                 android:layout_marginLeft="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -229,26 +284,32 @@
         <RelativeLayout
             android:layout_below="@+id/rl_description_opp"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_product_opp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+           >
 
             <TextView
-                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_product_group"
                 android:text="Product Group:"
-                android:textSize="15dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
-            <Spinner
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_dropdown_big"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_centerVertical="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 
@@ -265,23 +326,29 @@
         <RelativeLayout
             android:layout_below="@+id/rl_product_opp"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:id="@+id/rl_sales_opp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_sales_opp">
 
             <TextView
-                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_sales_process"
                 android:text="Sales Process:"
-                android:textSize="15dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <EditText
+                android:textSize="18sp"
+                android:cursorVisible="false"
+                android:layout_marginRight="10dp"
                 android:layout_marginLeft="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -305,135 +372,113 @@
         <RelativeLayout
             android:layout_below="@+id/rl_sales_opp"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_contract_date"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+           >
 
             <TextView
-                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_contract_date"
                 android:text="Contract Date:"
-                android:textSize="15sp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
-            <EditText
-                android:layout_marginLeft="5dp"
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:text="Sep 3, 2016"
+                android:cursorVisible="false"
+                android:layout_marginRight="10dp"
+                android:textColor="#6e6e6e"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/edit_contacts_oppo"
                 android:background="@android:color/transparent"
                 android:layout_toRightOf="@+id/txt_contract_date"
+                 />
+
+            <ImageView
+
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_meetings"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageView4" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rl_contract_date"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#d5d8dc"
+            android:id="@+id/view" />
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_contract_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_orderrows">
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#414141"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_first"
+                android:text="Orders Rows:"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/plus_orange"
+                android:cursorVisible="false"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/edit_first"
+                android:background="@android:color/transparent"
+                android:layout_alignTop="@+id/txt_first"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
-        <View
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_below="@+id/rl_contract_date"
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:background="#d5d8dc"/>
-
-        <RelativeLayout
-            android:layout_below="@+id/rl_contract_date"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:id="@+id/rl_orderrows"
-            android:layout_margin="10dp">
-
-            <TextView
-                android:textColor="#000"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txt_first"
-                android:text="Orders Rows:"
-                android:textSize="15dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <EditText
-                android:layout_centerVertical="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/edit_first"
-                android:background="@android:color/transparent"
-                android:layout_alignTop="@+id/txt_first"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_toRightOf="@+id/txt_first"
-                android:layout_toEndOf="@+id/txt_first" />
-
-        </RelativeLayout>
-
-        <View
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_below="@+id/rl_orderrows"
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:background="#d5d8dc"/>
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:weightSum="2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-    <TextView
-        android:layout_weight="1"
-        android:layout_marginLeft="10dp"
-        android:gravity="center"
-        android:textColor="#fff"
-
-        android:textSize="20sp"
-        android:padding="10dp"
-        android:background="@drawable/drawable_rectangle_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_add_opp_done"
-        android:text="Done"
-        android:layout_marginBottom="36dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginRight="2dp"/>
-
-    <TextView
-        android:layout_marginLeft="2dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:background="@drawable/drawable_rectangle_background"
-        android:textColor="#f8bd6f"
-        android:textSize="20sp"
-        android:padding="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_add_opp_cancel"
-        android:text="Cancel"
-        android:layout_alignTop="@+id/txt_add_opp_done"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+    <ImageView
+        android:src="@drawable/peach_floating"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/image_opp_teamfloating"
         android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp" />
-
-    </LinearLayout>
-
-
-
-
-
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

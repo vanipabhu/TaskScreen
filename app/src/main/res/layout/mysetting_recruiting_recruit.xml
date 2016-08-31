@@ -14,8 +14,6 @@
         >
         <ImageView
             android:backgroundTint="#fff"
-            android:paddingTop="18dp"
-            android:paddingBottom="18dp"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
             android:src="@drawable/menubar_dark"
@@ -87,9 +85,9 @@
                 android:layout_weight="1"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:textColor="#fff"
+                android:textColor="@color/colorPrimary"
                 android:gravity="center"
-                android:background="@drawable/headingrectangle_colorprimaryfull_right"
+                android:background="@drawable/headingrectangle_colorprimary_right"
                 android:textSize="14sp"
                 android:layout_marginLeft="0dp"
                 android:layout_width="wrap_content"
@@ -118,6 +116,7 @@
         android:layout_height="wrap_content"
         android:text="Recruitment list"
         />
+
 
     <TextView
         android:background="@drawable/rectangle_colorprimary_curve"
@@ -151,18 +150,16 @@
 
     <TextView
         android:background="@drawable/rectangle_colorprimary_curvefull"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/txt_recruitinglist_addmany"
-        android:layout_below="@+id/txt_recruitinglist"
         android:id="@+id/txt_recruitinglist_send"
         android:gravity="center"
         android:textSize="14sp"
-        android:layout_marginLeft="35dp"
         android:textColor="#fff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="send"
-        />
+        android:layout_alignTop="@+id/txt_recruitinglist_addmany"
+        android:layout_alignRight="@+id/view_recruiting1"
+        android:layout_alignEnd="@+id/view_recruiting1" />
 
     <View
         android:layout_width="match_parent"

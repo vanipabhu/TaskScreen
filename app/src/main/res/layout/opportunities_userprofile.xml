@@ -46,14 +46,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/icon_tab_favorite"
-                android:tint="#6e6e6e" />
+                android:backgroundTint="#6e6e6e" />
 
             <ImageView
                 android:id="@+id/img_oppuserprofile_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:src="@drawable/icon_edit_gray"
                 android:tint="#6e6e6e" />
 
@@ -61,7 +61,7 @@
                 android:id="@+id/img_oppuserprofile_moreaction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:src="@drawable/icon_more_actions"
                 android:layout_gravity="center_vertical"
                 android:tint="#6e6e6e" />
@@ -94,7 +94,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="220dp"
+                    android:layout_height="250dp"
                     android:layout_below="@+id/ll_upperHalf"
                     android:background="#f0836c" />
 
@@ -118,15 +118,85 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tv_profile_mail"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/tv_profile_profit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_profile_name"
+                    android:layout_below="@+id/tv_profile_weighted"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="100dp"
-                    android:text="huyen@abc.com"
+                    android:layout_marginTop="0dp"
+                    android:text="Profit: 0VND"
                     android:textColor="#FFFFFF"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_profile_weighted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_profile_value"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Weighted: 0VND"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_profile_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_profile_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="60dp"
+                    android:text="Value: 0VND"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tv_profile_value"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_profile_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_profile_name"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="60dp"
+                    android:text="Margin: 0%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tv_profile_value"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_profile_daysinpipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_profile_margin"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Days in pipe: 108"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tv_profile_value"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/tv_profile_contract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_profile_daysinpipe"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Contract date: Aug 16,2016"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+
             </RelativeLayout>
 
             <LinearLayout
@@ -153,7 +223,7 @@
                         android:layout_centerHorizontal="true"
                         android:src="@drawable/icon_task_in_progress_big" />
 
-                    <com.taskscreen.activity.Utilities.TextViewRegular
+                    <TextView
                         android:id="@+id/txt_oppuserprofile_tasks"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -173,12 +243,12 @@
 
                     <ImageView
                         android:id="@+id/img_oppuserprofile_appointment"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/icon_meetings" />
+                        android:src="@drawable/icon_meetings_30px" />
 
-                    <com.taskscreen.activity.Utilities.TextViewRegular
+                    <TextView
                         android:id="@+id/txt_oppuserprofile_appointment"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -199,10 +269,10 @@
 
                     <ImageView
                         android:id="@+id/img_oppuserprofile_leads"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/icon_leads_big" />
+                        android:src="@drawable/icno_leads_30px" />
 
                     <TextView
                         android:id="@+id/txt_oppuserprofile_leads"
@@ -249,10 +319,10 @@
 
                     <ImageView
                         android:id="@+id/img_oppuserprofile_orderrows"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/icon_meetings" />
+                        android:src="@drawable/icon_order_row_gray_30px" />
 
                     <TextView
                         android:id="@+id/txt_oppuserprofile_orderrows"
@@ -277,7 +347,7 @@
                 android:layout_below="@+id/first_row"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
@@ -294,7 +364,7 @@
                         android:layout_centerHorizontal="true"
                         android:src="@drawable/icon_document_doc" />
 
-                    <com.taskscreen.activity.Utilities.TextViewSemiBold
+                    <TextView
                         android:id="@+id/txt_oppuserprofile_documents"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -427,7 +497,8 @@
                 android:layout_below="@+id/rl_underlayout"
                 android:layout_marginTop="5dp">
 
-                <com.taskscreen.activity.Utilities.TextViewSemiBold
+                <TextView
+                    android:textColor="#414141"
                     android:id="@+id/txt_oppuserprof_workload"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

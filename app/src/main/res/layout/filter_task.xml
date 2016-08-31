@@ -46,8 +46,6 @@
     </RelativeLayout>
 
     <RelativeLayout
-
-        android:layout_marginTop="10dp"
         android:layout_below="@+id/rl_task_filter"
         android:id="@+id/rl_filter_list"
         android:layout_width="match_parent"
@@ -56,18 +54,20 @@
 
 
         <TextView
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="50dp"
             android:textColor="#f8bd6f"
-            android:textSize="15sp"
+            android:textSize="18sp"
             android:text="All"
             android:id="@+id/txt_filter_all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/image_filter_all"
             android:layout_alignLeft="@+id/view_filter_all"
             android:layout_alignStart="@+id/view_filter_all"
-            android:layout_marginStart="40dp" />
+            android:layout_marginStart="50dp" />
 
         <ImageView
             android:padding="8dp"
@@ -75,7 +75,7 @@
             android:id="@+id/image_filter_all"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/txt_filter_all"
             android:layout_alignRight="@+id/view_filter_all"
             android:layout_alignEnd="@+id/view_filter_all" />
 
@@ -88,18 +88,21 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:id="@+id/txt_filter_none"
             android:layout_below="@+id/view_filter_all"
-            android:textColor="#000"
-            android:textSize="15sp"
+            android:textColor="#414141"
+            android:textSize="18sp"
             android:text="None"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_alignLeft="@+id/txt_filter_sales"
-            android:layout_alignStart="@+id/txt_filter_sales" />
+            android:layout_alignRight="@+id/image_filter_all"
+            android:layout_alignEnd="@+id/image_filter_all"
+            android:layout_alignLeft="@+id/txt_filter_all"
+            android:layout_alignStart="@+id/txt_filter_all" />
 
         <View
             android:id="@+id/view_filter_none"
@@ -123,13 +126,17 @@
             android:layout_above="@+id/view_filter_sales" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:layout_toRightOf="@+id/image_filter_sales"
             android:id="@+id/txt_filter_sales"
             android:text="Sales"
             android:layout_below="@+id/view_filter_none"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_margin="10dp"
+            android:textColor="#414141"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -156,13 +163,17 @@
             android:layout_above="@+id/view_filter_internal" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:layout_toRightOf="@+id/image_filter_internl"
             android:text="Interal follow-up"
             android:id="@+id/txt_filter_internal"
             android:layout_below="@+id/view_filter_sales"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_margin="10dp"
+            android:textColor="#414141"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -189,13 +200,17 @@
             android:layout_above="@+id/view_filter_external" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:layout_toRightOf="@+id/image_filter_external"
             android:text="External follow-up"
             android:layout_below="@+id/view_filter_internal"
             android:id="@+id/txt_filter_external"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_margin="10dp"
+            android:textColor="#414141"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -221,13 +236,17 @@
             android:layout_alignStart="@+id/view_filter_none"
             android:layout_above="@+id/view_filter_issues" />
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:layout_toRightOf="@+id/image_filter_issues"
             android:layout_below="@+id/view_filter_external"
             android:id="@+id/txt_filter_issuse"
             android:text="Issues"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_margin="10dp"
+            android:textColor="#414141"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -254,13 +273,17 @@
             android:layout_above="@+id/view_filter_collo" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:layout_toRightOf="@+id/image_filter_collo"
             android:id="@+id/txt_filter_collo"
             android:layout_below="@+id/view_filter_issues"
             android:text="Collaboration"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_margin="10dp"
+            android:textColor="#414141"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taskscreen.activity.OpportunitiesSelectSalesProcess">
+
+    <RelativeLayout
+        android:background="@color/peach_opportunities"
+        android:id="@+id/rl_opp_selectsalesprocesspeach"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:padding="18dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bt_previous_white"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_opp_selectsalesprocess_backpeach"/>
+
+
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_opp_selectsalesprocess_headingpeach"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:text="Select Sales Process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:id="@+id/rl_opp_main_selectsalesprocesspeach"
+    android:layout_below="@+id/rl_opp_selectsalesprocesspeach"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textSize="18sp"
+        android:textColor="#414141"
+        android:text="huhu"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_opp_selectsalesprocess_namepeach"/>
+
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/view_opp_selectsalesprocess_namepeach"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:layout_below="@+id/txt_opp_selectsalesprocess_namepeach"/>
+
+    <TextView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/view_opp_selectsalesprocess_namepeach"
+        android:textSize="18sp"
+        android:textColor="#414141"
+        android:text="Default sales process"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_opp_selectsalesprocess_newprocesspeach"/>
+
+
+     <View
+         android:id="@+id/view_opp_selectsalesprocess_defaultpeach"
+         android:layout_marginTop="2dp"
+         android:layout_marginBottom="2dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="#d7d7d7"
+         android:layout_below="@+id/txt_opp_selectsalesprocess_newprocesspeach"/>
+
+    <TextView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/view_opp_selectsalesprocess_defaultpeach"
+        android:textSize="18sp"
+        android:textColor="#414141"
+        android:text="Register Order"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_opp_selectsalesprocess_registerpeach"/>
+
+
+    <View
+        android:id="@+id/view_opp_selectsalesprocess_registerpeach"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:layout_below="@+id/txt_opp_selectsalesprocess_registerpeach"/>
+
+    <TextView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/view_opp_selectsalesprocess_registerpeach"
+        android:textSize="18sp"
+        android:textColor="#414141"
+        android:text="Sales by salesbox"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_opp_selectsalesprocess_bysalesboxpeach"/>
+
+
+    <View
+        android:id="@+id/view_opp_selectsalesprocess_bysalesboxpeach"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"
+        android:layout_below="@+id/txt_opp_selectsalesprocess_bysalesboxpeach"/>
+
+    <TextView
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/view_opp_selectsalesprocess_bysalesboxpeach"
+        android:textSize="18sp"
+        android:textColor="#414141"
+        android:text="Default sales process"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_opp_selectsalesprocess_testpeach"/>
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>

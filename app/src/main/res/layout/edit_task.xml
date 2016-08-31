@@ -58,45 +58,47 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/rl_account"
             android:layout_marginBottom="1dp">
 
             <TextView
-                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_account_name"
                 android:text="Account:"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_marginLeft="5dp"
+                android:textColor="#6e6e6e"
+                android:cursorVisible="false"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
                 android:background="@android:color/transparent"
-                android:gravity=""
                 android:layout_toRightOf="@+id/txt_account_name"
-                android:textSize="15sp"
                 android:hint="abg"
+                android:layout_centerVertical="true"
                 android:id="@+id/txt_edit_task_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/imageView"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentTop="true" />
+                android:layout_toLeftOf="@+id/imageView" />
 
             <ImageView
+                android:layout_centerVertical="true"
                 android:src="@drawable/icon_contacts_small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView"
                 android:layout_marginRight="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 
@@ -113,18 +115,20 @@
         <RelativeLayout
             android:layout_below="@+id/rl_account"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_contact_opp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+           >
 
             <TextView
-                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_contacts_opp"
                 android:text="Contacts:"
-                android:textSize="15dp"
+                android:textSize="18dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -136,8 +140,8 @@
                 android:layout_centerVertical="true">
 
                 <EditText
-                    android:layout_marginLeft="5dp"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
+                    android:layout_marginRight="10dp"
                     android:layout_centerVertical="true"
                     android:hint="Vani Shasha"
                     android:layout_width="wrap_content"
@@ -153,9 +157,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/image_contact_opp"
-                    android:layout_marginRight="9dp"
-                    android:layout_marginEnd="9dp"
-                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true" />
 
@@ -174,34 +177,37 @@
         <RelativeLayout
             android:layout_below="@+id/rl_contact_opp"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_opp_team"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+            >
 
             <TextView
-                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_opp_team"
                 android:text="Opportunity:"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <RelativeLayout
-                android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@+id/txt_opp_team"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true">
 
-                <Spinner
+                <ImageView
+
+                    android:src="@drawable/icon_dropdown_big"
                     android:layout_marginRight="10dp"
                     android:layout_centerVertical="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true" />
 
@@ -220,23 +226,26 @@
         <RelativeLayout
             android:layout_below="@+id/rl_opp_team"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_description_opp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+           >
 
             <TextView
-                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_description_opp"
                 android:text="Category:"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
-            <Spinner
+            <ImageView
+
                 android:layout_marginRight="10dp"
                 android:layout_toRightOf="@+id/txt_description_opp"
                 android:layout_centerVertical="true"
@@ -258,29 +267,30 @@
         <RelativeLayout
             android:layout_below="@+id/rl_description_opp"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:id="@+id/rl_product_opp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_product_opp">
 
             <TextView
-                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_product_group"
                 android:text="Focus:"
-                android:textSize="15dp"
+                android:textSize="18dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
 
-            <Spinner
+            <ImageView
+                android:src="@drawable/icon_dropdown_big"
                 android:layout_marginRight="10dp"
-                android:layout_toRightOf="@id/txt_product_group"
                 android:layout_centerVertical="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 
@@ -297,18 +307,20 @@
         <RelativeLayout
             android:layout_below="@+id/rl_product_opp"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_sales_opp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+           >
 
             <TextView
-                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_sales_process"
                 android:text="Date and Time:"
-                android:textSize="15dp"
+                android:textSize="18dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -325,9 +337,12 @@
                 android:layout_alignParentEnd="true" />
 
             <EditText
+
+                android:textColor="#6e6e6e"
+                android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@+id/txt_sales_process"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:layout_centerVertical="true"
                 android:hint="22-july-2016"
                 android:layout_width="wrap_content"
@@ -338,13 +353,13 @@
                 />
 
             <ImageView
-
+                android:layout_centerVertical="true"
                 android:src="@drawable/icon_meetings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/image_calender_edittask"
-                android:layout_marginRight="9dp"
-                android:layout_marginEnd="9dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
@@ -362,18 +377,20 @@
         <RelativeLayout
             android:layout_below="@+id/rl_sales_opp"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_contract_date"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="1dp">
+         >
 
             <TextView
-                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_contract_date"
                 android:text="Owner:"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -389,9 +406,10 @@
                 android:layout_alignParentEnd="true" />-->
 
             <EditText
+                android:textColor="#6e6e6e"
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@+id/txt_contract_date"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:layout_centerVertical="true"
                 android:hint="Vani Shasha"
                 android:layout_width="wrap_content"
@@ -406,9 +424,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/image_contact_owner_edittask"
-                android:layout_marginRight="9dp"
-                android:layout_marginEnd="9dp"
-                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+               android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 
@@ -425,24 +443,32 @@
         <RelativeLayout
             android:layout_below="@+id/rl_contract_date"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:id="@+id/rl_orderrows"
-            android:layout_margin="10dp">
+           >
 
             <TextView
-                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_first"
                 android:text="Note:"
-                android:textSize="15dp"
+                android:textSize="18dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <TextView
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:layout_marginRight="10dp"
                 android:text="180"
+                android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/edit_first"
@@ -483,23 +509,28 @@
             android:layout_height="1dp"
             android:background="#d5d8dc"/>
         <RelativeLayout
-            android:layout_margin="10dp"
+
             android:layout_below="@+id/view_note"
             android:layout_width="match_parent"
-            android:layout_height="25dp">
+            android:layout_height="wrap_content">
 
             <TextView
+                android:layout_margin="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#414141"
                 android:id="@+id/txt_edit_task_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tag"
-                android:textColor="#000"
-                android:textSize="15sp"/>
+                android:textSize="18sp"/>
 
-            <Spinner
-                android:layout_toRightOf="@+id/txt_edit_task_tag"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_dropdown_big"
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
